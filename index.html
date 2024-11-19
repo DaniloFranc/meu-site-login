@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <img src="img/LogoEmPauta.png" alt="Logo" class="logo">
+
+        <!-- Caixa de Login -->
+        <div id="loginBox">
+            <h2 class="titulo">Login</h2>
+            <form id="loginForm" class="caixaPrinc">
+                <input type="text" id="nome" placeholder="Nome de usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+            
+            <h3><a class="esqueceu" href="#" id="forgotPasswordLink">Esqueceu a senha?</a></h3>
+        </div>
+
+        <!-- Caixa de Recuperação de Senha -->
+        <div id="forgotPasswordBox" style="display: none;">
+            <h2>Recuperação de Senha</h2>
+            <form id="forgotPasswordForm" class="caixaPrinc">
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <button type="submit">Enviar e-mail</button>
+            </form>
+            <button id="backToLogin" style="margin-top: 10px;">Voltar para login</button>
+        </div>
+
+    <script src="app.js"></script> <!-- Incluindo o arquivo app.js -->
+</body>
+</html>
+

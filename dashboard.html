@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleDashboard.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<header>
+    <div class="topoAlin1">
+        <div class="AlinUsuario">
+            <img src="icons/person_70dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="iconUser"></img>
+            <div class="letterUser" id="welcome-message"></div>
+        </div>
+        <div class="spaceTop"></div>
+        <div>
+            <button id="logoutButton" class="logoutButton">Sair</button>
+        </div>
+    </div> 
+    <div class="topoAlin2">
+        <div>
+            <img src="img/LogoEmPauta.png" class="logoDashboard">
+        </div>
+        <div class="spaceLogo"></div>
+        <div class="MenuAlin">
+            <div class="letter0">Área do Aluno</div>
+            <div class="letter0">Cursos</div>
+            <div class="letter0">Material de Apoio</div>
+            <div class="letter0">Gestão</div>
+        </div>
+    </div>
+</header>
+
+<body class="hidden"> <!-- Classe "hidden" será removida após validação -->
+    <div>
+        <div class="backgroundCenter">
+            <div class="contentCenter">
+                <div>
+                    <button class="buttonPrevious"><img src="icons/icon-previous.svg" class="iconPrevious"></button>
+                </div>
+                <div class="spaceButton"></div>
+                <div class="AlinMid">
+                    <div>
+                        <div class="letterT">A versão digital da sua escola de música preferida</div>
+                        <div class="letter1">Estude Música</div>
+                        <div class="letter2">A Qualquer Hora do Dia</div>
+                    </div>  
+                    <div>
+                        <button class="buttonCenter">Cursos</button>
+                    </div>
+                </div>
+                <div class="spaceButton"></div>
+                <div>
+                    <button class="buttonNext"><img src="icons/icon-next.svg" class="iconNext"></button>
+                </div>
+            </div>            
+        </div>
+
+        <div class="frameCourses">
+            
+            <div class="titleCourses">CURSOS</div>
+
+            <div class="alinApprenticeships">
+
+                <div class="musicTheoryMenu">
+                    <img src="img/teoria_musical.jpg" class="imgMusicTheory">
+                    <button class="viewCourseButton">ACESSAR</button>
+                    <div class="boxCourse">
+                        <div class="titleCourseBox">TEORIA MUSICAL</div>
+                        <div class="spaceBoxCourse"></div>
+                        <div class="progressCourse">última Interação: Não iniciado</div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="alinMusicTheorS">
+                        <div class="alinMusicTheory0">
+                            <img src="icons/checkbook_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseIcon">
+                            <div class="concCourse">36 aulas:</div>
+                        </div>
+                        <div class="spaceCourseCheck"></div>
+                        <div class="alinMusicTheory1">
+                            <img src="icons/check_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseCheckIcon">
+                            <div class="checkSpace"></div>
+                            <div class="courseStage">0</div>
+                        </div>                      
+                   </div>
+
+
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-value" id="progress-value">0%</div>
+                    </div>
+                </div>
+
+                <div class="musicTheoryMenu">
+                    <img src="img/leitura_musical.jpg" class="imgMusicTheory">
+                    <button class="viewCourseButton">ACESSAR</button>
+                    <div class="boxCourse">
+                        <div class="titleCourseBox">LEITURA MELÓDICA</div>
+                        <div class="spaceBoxCourse"></div>
+                        <div class="progressCourse">última Interação: Não iniciado</div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="alinMusicTheorS">
+                        <div class="alinMusicTheory0">
+                            <img src="icons/checkbook_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseIcon">
+                            <div class="concCourse">13 aulas:</div>
+                        </div>
+                        <div class="spaceCourseCheck"></div>
+                        <div class="alinMusicTheory1">
+                            <img src="icons/check_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseCheckIcon">
+                            <div class="checkSpace"></div>
+                            <div class="courseStage">0</div>
+                        </div>                      
+                   </div>
+
+
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-value" id="progress-value">0%</div>
+                    </div>
+                </div>
+
+                <div class="musicTheoryMenu">
+                    <img src="img/leituraRitmica.png" class="imgMusicTheory">
+                    <button class="viewCourseButton">ACESSAR</button>
+                    <div class="boxCourse">
+                        <div class="titleCourseBox">LEITURA RÍTMICA</div>
+                        <div class="spaceBoxCourse"></div>
+                        <div class="progressCourse">última Interação: Não iniciado</div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="alinMusicTheorS">
+                        <div class="alinMusicTheory0">
+                            <img src="icons/checkbook_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseIcon">
+                            <div class="concCourse">22 aulas:</div>
+                        </div>
+                        <div class="spaceCourseCheck"></div>
+                        <div class="alinMusicTheory1">
+                            <img src="icons/check_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseCheckIcon">
+                            <div class="checkSpace"></div>
+                            <div class="courseStage">0</div>
+                        </div>                      
+                   </div>
+
+
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-value" id="progress-value">0%</div>
+                    </div>
+                </div>
+
+                <div class="musicTheoryMenu">
+                    <img src="img/percepcao_musical.jpg" class="imgMusicTheory">
+                    <button class="viewCourseButton">ACESSAR</button>
+                    <div class="boxCourse">
+                        <div class="titleCourseBox">PERCEPÇÃO MUSICAL</div>
+                        <div class="spaceBoxCourse"></div>
+                        <div class="progressCourse">última Interação: Não iniciado</div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="alinMusicTheorS">
+                        <div class="alinMusicTheory0">
+                            <img src="icons/checkbook_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseIcon">
+                            <div class="concCourse">19 aulas:</div>
+                        </div>
+                        <div class="spaceCourseCheck"></div>
+                        <div class="alinMusicTheory1">
+                            <img src="icons/check_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="courseCheckIcon">
+                            <div class="checkSpace"></div>
+                            <div class="courseStage">0</div>
+                        </div>                      
+                   </div>
+
+
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-value" id="progress-value">0%</div>
+                    </div>
+                </div>
+
+                
+
+            </div>   
+            <div class="lineEnd"></div>         
+        </div>
+        
+        <div>
+            <div class="backgroundPlayAlongs">
+                <div class="PlayAlongsBox">
+                    <div class="contentPlayAlongs">
+                        <div class="boxPlayAlongs">
+                            <div class="textTitle">
+                                <div >Uma Biblioteca com </div>
+                                <div class="PlayAlongsTextBoxSpace"></div>
+                                <div class="AlongBoxNegrito"> mais de 500 play</div>                                
+                            </div>
+                            <div class="textTitle2">alongs</div>
+                            <div class="textSubtitle">Toque ou cante sua música preferida!</div>
+                        </div>                        
+                    </div>
+                    <button class="buttonPlayAlongs">ACESSAR</button>
+                </div>
+                <div class="spacePlayAlongs"></div>
+                <div>
+                    <div class="PlayAlongAudio">
+                        <div class="PlayAlongAudioLetter">Ouça um exemplo</div>
+                        <div class="PlayAlongAudioLetter">de Play Along</div>
+                    </div>
+                    <div class="audioBox">
+                        <audio controls>
+                            <source src="audio/karaoke - Ironic.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="welcome-message"></div>  
+</body>
+
+
+<script src="dashboard.js"></script>
+</html>
+
