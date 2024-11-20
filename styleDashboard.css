@@ -510,3 +510,76 @@ audio {
 .audioBox{
     margin-top: 1vw;
 }
+
+.boxBaseboard {
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    padding: 1vw 1vw 1vw 1vw; /* Espaçamento interno */
+    margin-left: 10vw;
+    margin-top: 5vw;
+    max-width: 700px; /* Limita a largura máxima */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.alinBaseboard {
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+.title {
+    font-size: 2.5vw; /* Tamanho do texto */
+    font-weight: bold;
+    color: black;
+}
+
+.baseboard {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #3E4094; /* Cor roxa */
+}
+
+.spaceBaseboard {
+    width: 10px; /* Espaço entre as palavras */
+}
+
+.textSection {
+    margin-bottom: 15px; /* Espaço entre as seções de texto */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.6; /* Altura das linhas */
+}
+
+.buttonReferences {
+    display: block;
+    
+    background-color: #3E4094; /* Cor de fundo roxa */
+    color: #FFFFFF; /* Cor do texto */
+    border: none;
+    border-radius: 0.2vw; /* Borda arredondada */
+    padding: 1vw 3vw 1vw 3vw; /* Espaçamento interno */
+    font-size: 0.9vw; /* Tamanho do texto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação */
+}
+
+.buttonReferences:hover {
+    background-color: #292b73; /* Escurece no hover */
+}
+
+.baseboardImg {
+    position: absolute; /* Permite posicionamento preciso */
+    top: 143vw; /* Move a imagem para cima */
+    right: 10vw; /* Ajusta a distância da imagem para a direita */
+    z-index: -1; /* Coloca a imagem atrás dos outros elementos */
+    /* opacity: 0.8; */
+}
+
+.spaceBaseboardBot{
+    height: 12vw;
+}
