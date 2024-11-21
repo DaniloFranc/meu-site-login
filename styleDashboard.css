@@ -759,3 +759,65 @@ audio {
 .letterCourse{
     font-size: 0.8vw;
 }
+
+.titleAula{
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    padding: 1vw;
+
+}
+
+.BotãoExercicio{
+    background-color: #3E4094;
+    color: white;
+    font-size: 1vw;
+    /* margin-top: 1vw; */
+    border: none;
+    padding: 1vw;
+}
+
+
+.lineExerciciesBox{
+    width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+    height: 0.05vw; /* Espessura da linha */
+    background-color: #BFE699; /* Cor da linha */
+    border: none; /* Remove qualquer borda padrão */
+    background-color: #CCCCCC;
+}
+
+.lineExerciciesBox1{
+    width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+    height: 0.05vw; /* Espessura da linha */
+    background-color: #BFE699; /* Cor da linha */
+    border: none; /* Remove qualquer borda padrão */
+    background-color: #CCCCCC;
+    margin-bottom: 1vw;
+}
+
+.buttonIniciarExercicio{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    font-size: 1vw;
+    margin-bottom: 10vw;
+    
+}
+
+.ExerciciesBox {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;    
+}
+
+.BotãoExercicio{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.videoAula{
+    width: 45vw;
+}
+
