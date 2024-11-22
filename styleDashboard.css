@@ -865,16 +865,4 @@ audio {
     font-size: "Roboto", sans-serif;
 }
 
-video::-webkit-media-controls-play-button {
-    width: 40px; /* Define um tamanho menor */
-    height: 40px;
-    transform: scale(1); /* Garante proporção correta */
-}
 
-/* Ajuste adicional para dispositivos menores */
-@media (max-width: 600px) {
-    video::-webkit-media-controls-play-button {
-        width: 300px; /* Reduz o tamanho para telas pequenas */
-        height: 300px;
-    }
-}
