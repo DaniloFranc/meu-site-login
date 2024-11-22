@@ -865,14 +865,14 @@ audio {
 
 /* Ajuste do botão de play para telas menores */
 video::-webkit-media-controls-play-button {
-    width: 40px; /* Tamanho menor para o botão de play */
-    height: 40px;
+    width: 0.4px; /* Tamanho menor para o botão de play */
+    height: 0.4px;
 }
 
 @media (max-width: 600px) {
     video::-webkit-media-controls-play-button {
-        width: 30px; /* Botão menor em dispositivos muito pequenos */
-        height: 30px;
+        width: 1px; /* Botão menor em dispositivos muito pequenos */
+        height: 1px;
     }
 }
 
