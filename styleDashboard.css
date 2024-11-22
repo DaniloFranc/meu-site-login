@@ -747,18 +747,6 @@ audio {
     margin-left: 1vw;
 }
 
-video::-webkit-media-controls-play-button {
-    width: 0.01vw; /* Defina o tamanho desejado */
-    height: 0.01vw;
-}
-
-/* Ajuste adicional para dispositivos menores */
-@media (max-width: 600px) {
-    video::-webkit-media-controls-play-button {
-        width: 0.001vw;
-        height: 0.001vw;
-    }
-}
 
 .AlinSubtitles1{
     cursor: pointer;
@@ -875,4 +863,18 @@ video::-webkit-media-controls-play-button {
     margin-top: 5vw;
     font-size: 1vw;
     font-size: "Roboto", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .videoAula {
+        max-width: 100%; /* Permite ao vídeo ocupar toda a largura disponível */
+        margin: 0 10px; /* Adiciona espaçamento lateral para evitar bordas coladas */
+    }
+}
+
+@media (max-width: 480px) {
+    .videoAula {
+        max-width: 100%; /* Garante que o vídeo preencha a tela */
+        margin: 0 5px; /* Margem lateral menor para telas muito pequenas */
+    }
 }
