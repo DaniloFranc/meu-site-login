@@ -852,14 +852,14 @@ audio {
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .videoAula {
-        max-width: 95%; /* Reduz a largura máxima para caber na tela */
+        max-width: 50%; /* Reduz a largura máxima para caber na tela */
         margin: 0 auto; /* Certifica que o vídeo ainda está centralizado */
     }
 }
 
 @media (max-width: 480px) {
     .videoAula {
-        max-width: 90%; /* Mais redução para telas de smartphones */
+        max-width: 50%; /* Mais redução para telas de smartphones */
     }
 }
 
