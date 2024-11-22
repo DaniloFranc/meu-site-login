@@ -871,8 +871,8 @@ video::-webkit-media-controls-play-button {
 
 @media (max-width: 600px) {
     video::-webkit-media-controls-play-button {
-        width: 1px; /* Botão menor em dispositivos muito pequenos */
-        height: 1px;
+        width: 0.1px; /* Botão menor em dispositivos muito pequenos */
+        height: 0.1px;
     }
 }
 
