@@ -865,16 +865,16 @@ audio {
     font-size: "Roboto", sans-serif;
 }
 
-@media (max-width: 768px) {
-    .videoAula {
-        max-width: 100%; /* Permite ao vídeo ocupar toda a largura disponível */
-        margin: 0 10px; /* Adiciona espaçamento lateral para evitar bordas coladas */
-    }
+video::-webkit-media-controls-play-button {
+    width: 40px; /* Define um tamanho menor */
+    height: 40px;
+    transform: scale(1); /* Garante proporção correta */
 }
 
-@media (max-width: 480px) {
-    .videoAula {
-        max-width: 100%; /* Garante que o vídeo preencha a tela */
-        margin: 0 5px; /* Margem lateral menor para telas muito pequenas */
+/* Ajuste adicional para dispositivos menores */
+@media (max-width: 600px) {
+    video::-webkit-media-controls-play-button {
+        width: 30px; /* Reduz o tamanho para telas pequenas */
+        height: 30px;
     }
 }
