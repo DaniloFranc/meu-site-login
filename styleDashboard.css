@@ -874,7 +874,7 @@ video::-webkit-media-controls-play-button {
 /* Ajuste adicional para dispositivos menores */
 @media (max-width: 600px) {
     video::-webkit-media-controls-play-button {
-        width: 3px; /* Reduz o tamanho para telas pequenas */
-        height: 3px;
+        width: 300px; /* Reduz o tamanho para telas pequenas */
+        height: 300px;
     }
 }
