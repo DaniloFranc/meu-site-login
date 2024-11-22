@@ -747,7 +747,9 @@ audio {
     margin-left: 1vw;
 }
 
+
 .AlinSubtitles1{
+    cursor: pointer;
     display: flex;
     margin-top: 0.1vw;
     margin-left: 1vw;
