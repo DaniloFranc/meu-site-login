@@ -755,8 +755,8 @@ video::-webkit-media-controls-play-button {
 /* Ajuste adicional para dispositivos menores */
 @media (max-width: 600px) {
     video::-webkit-media-controls-play-button {
-        width: 0.01vw;
-        height: 0.01vw;
+        width: 0.001vw;
+        height: 0.001vw;
     }
 }
 
