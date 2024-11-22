@@ -747,39 +747,16 @@ audio {
     margin-left: 1vw;
 }
 
-.video-container {
-    position: relative;
-    width: 100%; /* O contêiner ocupa 100% da largura do pai */
-    max-width: 800px; /* Limita a largura máxima do player */
-    margin: 0 auto; /* Centraliza horizontalmente */
-}
-
-.video-container video {
-    width: 100%; /* O vídeo se ajusta à largura do contêiner */
-    height: auto; /* Mantém a proporção do vídeo */
-    display: block; /* Remove espaçamento extra no vídeo */
-}
-
-/* Ajuste específico para o ícone do player */
 video::-webkit-media-controls-play-button {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: 50px;
-    transform: scale(1); /* Mantém proporção */
+    width: 0.01vw; /* Defina o tamanho desejado */
+    height: 0.01vw;
 }
 
-video::-webkit-media-controls {
-    transform: scale(0.9); /* Ajuste o tamanho geral dos controles */
-}
-
-/* Para telas menores */
+/* Ajuste adicional para dispositivos menores */
 @media (max-width: 600px) {
     video::-webkit-media-controls-play-button {
-        width: 40px; /* Reduz mais para telas pequenas */
-        height: 40px;
-    }
-
-    video::-webkit-media-controls {
-        transform: scale(0.8); /* Ajuste menor ainda */
+        width: 0.01vw;
+        height: 0.01vw;
     }
 }
 
