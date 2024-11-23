@@ -33,7 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         const data = await response.json();
         if (data.success) {
             localStorage.setItem('token', data.token); // Salva o token no localStorage
-            window.location.href = 'dashboard.html'; // Redireciona para o dashboard
+            window.location.href = 'dashboardComBootStrapGuardar.html'; // Redireciona para o dashboard
         } else {
             document.getElementById('error-message').innerText = data.message;
         }

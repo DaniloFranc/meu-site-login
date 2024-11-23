@@ -11,6 +11,8 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .logoDashboard {
@@ -31,15 +33,133 @@
             height: 5px;
         }
 
+        /* Adicionando parallax para a imagem de fundo */
         .backgroundPlayAlongs {
-            background-color: #f8f9fa;
+            position: relative;
+            background-image: url('img/videoBg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* O truque para manter a imagem fixa durante a rolagem */
             padding: 30px 15px;
             border-radius: 10px;
+            backdrop-filter: blur(10px);
+            color: white;
+            z-index: 1;
         }
 
         .baseboardImg {
             width: 100%;
             height: auto;
+        }
+
+        /* .nav-link {
+            font-weight: 500;
+            font-size: 1.1rem;
+        } */
+
+        .references-section {
+            background-image: url('img/referênciasMusicais0.png');
+            background-size: cover;
+            background-position: center;
+            padding: 40px 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        /* Estilo para a seção com fundo PersonFI.png e botões laterais */
+        .version-digital-section {
+            position: relative;
+            background-image: url('img/MeninoPartitura0.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;  /* Efeito parallax */
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            z-index: 1;
+        }
+
+
+        .button-side {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 50%; /* Tornando o botão completamente arredondado */
+            width: 60px;  /* Definindo largura fixa */
+            height: 60px; /* Definindo altura fixa */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+        }
+
+        .button-left {
+            left: 10px;
+        }
+
+        .button-right {
+            right: 10px;
+        }
+
+        /* Efeito de contorno quando o mouse passar sobre os botões */
+        .button-side:hover {
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.7); /* Mudando a opacidade ao passar o mouse */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .logoDashboard {
+                max-height: 60px;
+            }
+
+            .iconUser {
+                max-height: 30px;
+            }
+
+            .version-digital-section h1 {
+                font-size: 1.5rem;
+            }
+
+            .version-digital-section p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Ajustes para telas maiores que 992px */
+        @media (min-width: 992px) {
+            .frameCourses img {
+                width: 100%;
+                height: 300px; /* Aumentando a altura da imagem para se ajustar ao design de PC */
+                object-fit: cover; /* Faz com que a imagem cubra a área sem distorção */
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: 250px; /* Ajusta a altura das imagens */
+                object-fit: cover;
+            }
+
+            .version-digital-section h1 {
+                font-size: 3rem; /* Aumenta o tamanho do título em telas grandes */
+            }
+
+            .version-digital-section p {
+                font-size: 1.25rem; /* Aumenta o tamanho do parágrafo */
+            }
+
+            .references-section {
+                padding: 60px 15px; /* Aumenta o padding da seção de referências */
+            }
+
+            
+
+            
         }
     </style>
 </head>
@@ -57,20 +177,46 @@
             <div class="text-center my-3">
                 <img src="img/LogoEmPauta.png" class="logoDashboard" alt="Logo">
             </div>
-            <nav class="nav justify-content-center">
-                <a class="nav-link text-dark fw-bold" href="#">Área do Aluno</a>
-                <a class="nav-link text-dark fw-bold" href="#">Cursos</a>
-                <a class="nav-link text-dark fw-bold" href="#">Material de Apoio</a>
-                <a class="nav-link text-dark fw-bold" href="#">Gestão</a>
+    
+            <!-- Navbar com menu hamburger para telas pequenas -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Área do Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Material de Apoio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Gestão</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="text-center my-4">
+        <section class="version-digital-section text-center">
             <h1 class="fw-bold">A versão digital da sua escola de música preferida</h1>
             <p class="lead">Estude Música a qualquer hora do dia</p>
             <a href="#cursos" class="btn btn-primary btn-lg">Cursos</a>
+
+            <!-- Botões laterais -->
+            <!-- <button class="button-side button-left">
+                <img src="icons/icon-previous.svg" alt="Anterior" />
+            </button>
+            <button class="button-side button-right">
+                <img src="icons/icon-next.svg" alt="Próximo" />
+            </button> -->
         </section>
 
         <section id="cursos" class="my-5">
@@ -85,7 +231,9 @@
                             <div class="progress mb-2">
                                 <div class="progress-bar bg-success" style="width: 0%;"></div>
                             </div>
-                            <button class="btn btn-outline-primary w-100">Acessar</button>
+                            <a href="MusicTheoryComBootStrap.html">
+                                <button class="btn btn-outline-primary w-100">Acessar</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -131,6 +279,7 @@
             </div>
         </section>
 
+        <!-- Seção com fundo de imagem -->
         <section class="my-5 backgroundPlayAlongs text-center">
             <h2 class="fw-bold">Biblioteca de Play Alongs</h2>
             <p class="lead">Uma biblioteca com mais de 500 play alongs. Toque ou cante sua música preferida!</p>
@@ -143,7 +292,8 @@
             </div>
         </section>
 
-        <section class="text-center my-5">
+        <!-- Seção de referências com fundo de imagem -->
+        <section class="references-section text-center my-5">
             <h2 class="fw-bold">Referências Musicais</h2>
             <p>Conheça quem são as maiores referências musicais do seu instrumento preferido. Descubra o trabalho de músicos renomados e inspire-se com esta coletânea especial.</p>
             <button class="btn btn-secondary btn-lg">Acessar Referências</button>

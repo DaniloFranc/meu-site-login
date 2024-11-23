@@ -1,0 +1,1008 @@
+.selected {
+    background-color: #f0f0f0; /* Cor de fundo para destacar */
+    color: #333; /* Alteração da cor do texto */
+    font-weight: bold; /* Deixe o texto em negrito */
+    border-left: 5px solid #007bff; /* Adicione um destaque na borda */
+}
+
+
+@media (min-width: 992px) {
+
+    body.hidden {
+        visibility: hidden; /* Torna o conteúdo invisível */
+        pointer-events: none; /* Evita qualquer interação */
+    }
+    
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    body {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        
+    }
+    
+    .AlinUsuario{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+    }
+    
+    .letterUser {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        padding: 1vw 1vw; /* Ajuste de espaçamento para o texto */
+        font-size: 1vw;
+        display: inline-block;
+        vertical-align: middle; /* Garante que o texto fique alinhado ao centro da altura da linha */
+    }
+    
+    .topoAlin1{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #3C3D41;
+        height: 3.1vw;
+    }
+    
+    .topoAlin2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .spaceTop{
+        width: 75vw;
+    }
+    
+    .iconUser{
+        width: 4vw;
+        width: 2vw;
+    }
+    
+    .logoutButton {
+        cursor: pointer;
+        padding: 1vw;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.9vw;
+        background-color: #3E4094;
+        border: none;
+        height: 100%; /* Garante que o botão tenha a altura completa da div topoAlin1 */
+        display: flex;
+        align-items: center; /* Alinha verticalmente o texto dentro do botão */
+        justify-content: center; /* Centraliza o texto do botão */
+    }
+    
+    .logoDashboard{
+        height: 6vw;
+    }
+    
+    .spaceLogo{
+        width: 38vw;
+    }
+    
+    .MenuAlin{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .letter0{
+        padding: 3vw 1vw 1vw 1vw;
+        color: #3C3D41;
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    
+    
+    .AlinTheoryMusicalTop {
+        position: relative;
+        background-image: url('img/BackgroundMusicalTheory.png');
+        background-size: cover; /* Isso garante que a imagem cubra toda a área do fundo */
+        background-position: center; /* Isso centraliza a imagem no fundo */
+        height: 15vw; /* Ajuste a altura conforme necessário */
+        display: flex;
+        justify-content: center; /* Alinha o conteúdo no centro horizontalmente */
+        align-items: center; /* Alinha o conteúdo no centro verticalmente */
+        text-align: center; /* Garante que o texto também fique centralizado */
+    }
+    
+    .letterTheoryMusicalTop {
+        font-size: 2vw; /* Ajuste o tamanho da fonte conforme necessário */
+        color: white; /* Cor do texto, ajuste conforme necessário */
+        font-weight: bold; /* Pode ajustar o estilo da fonte se preferir */
+    }
+    
+    .BoxTopMusicalTheory{
+        background-color: #3E4094;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5vw;
+        padding: 0.8vw 8vw 0.8vw 8vw;
+    }
+    
+    .littleBoxMusicalTheory{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .BoxMusicalTheory{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-left: 15vw;
+    }
+    
+    .spaceMusicalTheory{
+        width: 1vw;
+    }
+    
+    .BoxMusicalTheory{
+        margin-top: 1vw;
+    }
+    
+    .titleMusicalTheoryCourse{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5vw;
+    }
+    
+    .spaceLitteBox{
+        width: 2vw;
+    }
+    
+    
+    .AlinLetterProgressBoxCourse{
+        font-size: "Roboto", sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        margin-top: 1.5vw;
+    }
+    
+    
+    .iconCalendar{
+        margin-top: 0.4vw;
+        width: 4vw;
+    }
+    
+    .letterProgressBox{
+        font-size: 0.8vw;
+        margin-bottom: -0.5vw;
+        margin-left: 0.5vw;
+    }
+    /* Progress bar cursos*/
+    
+    .progress-bar0{
+        width: 20vw; /* Largura da barra */
+        height: 1vw; /* Altura da barra */
+        background-color: #f3f3f3; /* Cor de fundo da barra */
+        margin-left: 0.1vw;
+        margin-bottom: 0.5vw;
+        margin-top: 1vw;
+        border: 0.1vw solid #ccc; /* Borda da barra */
+        border-radius: 1vw; /* Bordas arredondadas */
+        overflow: hidden; /* Garante que o conteúdo não "vaze" */
+        position: relative; /* Necessário para posicionar o número */
+    }
+    
+    .progress0{
+        height: 100%; /* Altura igual à barra de progresso */
+        background-color: #4CAF50; /* Cor da barra de progresso */
+        width: 0%; /* O valor inicial da barra (dinâmico) */
+        transition: width 0.3s ease-in-out; /* Animação suave */
+    }
+    
+    .progress-value0{
+        position: absolute; /* Posiciona o número dentro da barra */
+        top: 0;
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, 0); /* Ajusta para o centro */
+        color: black; /* Cor do texto */
+        font-weight: bold; /* Negrito */
+        font-size: 0.8vw; /* Tamanho do texto */
+        margin-top: -0.2vw;
+    }
+    
+    /* fim progress bar cursos*/
+    
+    .iconModulo{
+        width: 1.5vw;
+    }
+    
+    .AlinModulo1{
+        display: flex;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    .spaceModulo1{
+        width: 0.5vw;
+    }
+    
+    .Modulo1{
+        font-weight: bold;
+        font-size: 1.2vw;
+    }
+    
+    .iconClock{
+        width: 0.8vw;
+        height: 0.8vw;
+        margin-top: 0.2vw;
+    }
+    
+    .AlinSubtitles0{
+        cursor: pointer;
+        display: flex;
+        margin-top: 1vw;
+        margin-left: 1vw;
+    }
+    
+    
+    .AlinSubtitles1{
+        cursor: pointer;
+        display: flex;
+        margin-top: 0.1vw;
+        margin-left: 1vw;
+    }
+    
+    .spaceModuloSubtitles1{
+        width: 0.5vw;
+    }
+    
+    .letterCourse{
+        font-size: 0.8vw;
+    }
+    
+    .titleAula{
+        display: flex;
+        justify-content: center;
+        font-size: 1vw;
+        padding: 1vw;
+    
+    }
+    
+    .BotãoExercicio{
+        background-color: #3E4094;
+        color: white;
+        font-size: 1vw;
+        border: none;
+        padding: 1vw;
+    }
+    
+    .BotãoApostila{
+        background-color: white;
+        color: black;
+        font-size: 1vw;
+        border: none;
+        padding: 1vw 1vw 1vw 1vw;
+        margin-left: 0.2vw;
+    
+    }
+    
+    
+    
+    .lineExerciciesBox{
+        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+        height: 0.05vw; /* Espessura da linha */
+        background-color: #BFE699; /* Cor da linha */
+        border: none; /* Remove qualquer borda padrão */
+        background-color: #CCCCCC;
+    }
+    
+    .lineExerciciesBox1{
+        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+        height: 0.05vw; /* Espessura da linha */
+        background-color: #BFE699; /* Cor da linha */
+        border: none; /* Remove qualquer borda padrão */
+        background-color: #CCCCCC;
+        margin-bottom: 1vw;
+    }
+    
+    .buttonIniciarExercicio{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        font-size: 1vw;
+        margin-bottom: 10vw;
+        
+    }
+    
+    .buttonIniciarExercicio1{
+        display: flex;
+        justify-content: center;
+        margin-top: 1vw;
+        font-size: 1vw;
+        margin-bottom: 10vw;
+        
+    }
+    
+    
+    .ExerciciesBox {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;    
+    }
+    
+    .BotãoExercicio{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    
+    .videoAula{
+        width: 45vw;
+    }
+    
+    .AlinBotApostilas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .clickedButton {
+        background-color: #3E4094;
+        color: white;
+    }
+    
+    .unclickedButton {
+        background-color: white;
+        color: black;
+    }
+    
+    .titleHandout{
+        margin-top: 5vw;
+        font-size: 1vw;
+        font-size: "Roboto", sans-serif;
+    }
+    
+
+}
+
+/* Estilos para telas entre 768px e 992px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    
+
+    header {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topoAlin1 {
+        background-color: #3C3D41;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .AlinUsuario {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .iconUser {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .logoutButton {
+        font-size: 14px;
+        padding: 8px 12px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .logoutButton:hover {
+        background-color: #0056b3;
+    }
+
+    .logoDashboard {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .MenuAlin {
+        justify-content: center;
+    }
+
+    .MenuAlin .letter0 {
+        margin: 5px 10px;
+        font-size: 13px;
+    }
+
+    .BoxMusicalTheory {
+        padding: 20px;
+    }
+
+    .AlinModulo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .spaceModulo1{
+
+        width: 1vw;
+    
+    }
+
+    .spaceTop{
+        width: 70vw;
+    }
+
+
+    .AlinModulo1 {
+        text-align: center;
+    }
+
+    .Modulo1 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .titleMusicalTheoryCourse {
+        font-size: 20px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .littleBoxMusicalTheory {
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        max-width: 90%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .progress-bar0 {
+        width: 100%;
+        background-color: #e9ecef;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .progress0 {
+        background-color: #007bff;
+        height: 100%;
+        width: 0; /* Atualize dinamicamente no JavaScript */
+        transition: width 0.5s;
+    }
+
+    .progress-value0 {
+        text-align: right;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .letterCourse {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .iconModulo{
+        width: 1vw;
+    }
+
+    .iconClock{
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-top: 0.5vw;
+    }
+
+    .AlinModulo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .videoAula{
+        width: 95vw;
+    }
+
+    .AlinModulo1{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+    }
+
+
+    .AlinSubtitles0{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 2vw;
+    }
+
+    .AlinSubtitles1{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .iconModulo{
+        width: 2vw;
+        height: 3vw;
+        margin-top: 0.5vw;
+    }
+
+
+    .letterTheoryMusicalTop{
+        visibility: hidden;
+    }
+
+    .spaceModuloSubtitles1{
+        width: 1vw;
+    }
+
+    .BoxTopMusicalTheory{
+        display: flex;
+        justify-content: center;
+        background-color: #3E4094;
+        color: white;
+        font-size: 3vw;
+        padding: 2vw;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .navbar-expand-md .navbar-collapse {
+        display: none !important; /* Oculta o menu expandido */
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: block; /* Mostra o botão hambúrguer */
+    }
+    .navbar-expand-md .collapse.show {
+        display: block !important; /* Força o menu colapsável a aparecer quando aberto */
+    }
+
+    .topoAlin1{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 10vw;
+    }
+
+    .logoDashboard{
+        display: flex;
+        justify-content: center;
+        margin-top: -1vw;
+        margin-left: 27vw;
+        width: 40vw;
+        height: 15vw;
+
+    }
+
+
+    .spaceLogo{
+        width: 10vw;
+    }
+
+    .iconUser{
+        width: 3vw;
+    }
+
+    .letterUser{
+        color: white;
+        font-size: 2vw ;
+    }
+
+    .BotãoExercicio{
+        background-color: #3E4094;
+        color: white;
+        border: none;
+        padding: 2vw;
+        margin-top: 1vw;
+    }
+
+    .ExerciciesBox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .lineExerciciesBox{
+        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+        height: 0.2vw; /* Espessura da linha */
+        background-color: #BFE699; /* Cor da linha */
+        border: none; /* Remove qualquer borda padrão */
+        background-color: #CCCCCC;
+    }
+
+    .buttonIniciarExercicio{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        padding: 1vw 1vw 1vw 10vw;
+        /* margin-left: 40vw; */
+        border: none;
+        
+        
+    }
+
+    .BotãoApostila{
+        Background-color: white;
+        color: black;
+        border: none;
+        padding: 1vw 1vw 1vw 1vw;
+        margin-left: 0.2vw;
+        background-color: #3E4094;
+        color: white;
+        border: none;
+        padding: 2vw;
+        margin-top: 1vw;
+
+    }
+
+    .lineExerciciesBox1{
+        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+        height: 0.1vw; /* Espessura da linha */
+        background-color: #BFE699; /* Cor da linha */
+        border: none; /* Remove qualquer borda padrão */
+        background-color: #CCCCCC;
+        margin-bottom: 10vw;
+    }
+
+    .clickedButton {
+        background-color: #3E4094;
+        color: white;
+    }
+    
+    .unclickedButton {
+        background-color: white;
+        color: black;
+    }
+
+    .titleHandout{
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonIniciarExercicio1{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        padding: 1vw 1vw 1vw 10vw;
+        /* margin-left: 40vw; */
+        border: none;
+    }
+
+    .AlinBotApostilas{
+        margin-top: 10vw;
+    }
+    
+}
+
+
+
+
+/* Estilos para telas menores que 768px (celulares) */
+@media (max-width: 767px) {
+
+    
+
+
+    .topoAlin1{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* height: 10vw; */
+        background-color: #3C3D41;
+
+    }
+
+    .AlinUsuario{
+        display: flex;
+        justify-content: center;
+        margin-top: 2vw;
+    }
+    
+    .logoutButton{
+        display: flex;
+        justify-content: center;
+        color: white;
+        border: none;
+        padding: 1vw;
+        background-color: #007BFF;
+        
+    }
+
+    .spaceTop{
+        height: 2vw;
+    }
+
+    .iconModulo{
+        width: 1vw;
+    }
+
+    .iconClock{
+        width: 2vw;
+        margin-top: 2.5vw;
+        height: 2vw;
+    }
+
+    .videoAula{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        border: none;
+        padding: 0;
+    }
+
+    .topoAlin2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .MusicNavBar{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .logoDashboard{
+        display: flex;
+        justify-content: center; 
+        width: 100vw; 
+        border: none; 
+        padding: 0; 
+        
+    }
+
+    .BoxTopMusicalTheory{
+        display: flex;
+        justify-content: center;
+        background-color: #3E4094;
+        color: white;
+        font-size: 7vw;
+        padding: 2vw;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .letterTheoryMusicalTop{
+        visibility: hidden;
+    }
+
+    .AlinModulo1{
+        display: flex;
+        background-color: #4CAF50;
+        justify-content: center;
+        margin-top: 10vw;
+    }
+    .iconModulo{    
+        width: 4vw;
+        height: 5vw;
+        margin-bottom: 1vw;
+    }
+
+    .letterUser{
+        color: white;
+        font-size: 2vw ;
+        margin-top: 0.5vw;
+    }
+
+    .iconUser{
+        width: 4vw;
+    }
+
+    .AlinSubtitles0{
+        display: flex;
+       
+
+    }
+
+    .AlinSubtitles1{
+        display: flex;
+       
+    }
+
+    .spaceModuloSubtitles1{
+        width: 0.5vw;
+    }
+
+    .AlinSubtitles1{
+        margin-top: 1vw;
+    }
+
+    .titleAula{
+        display: flex;
+        justify-content: center;
+    }
+
+    .progress-bar0 {
+        width: 100%;
+        background-color: #e9ecef;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .progress0 {
+        background-color: #007bff;
+        height: 100%;
+        width: 0; 
+        transition: width 0.5s;
+    }
+
+    .progress-value0 {
+        text-align: right;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .letterProgressBox{
+        display: flex;
+        justify-content: center;
+    }
+
+    .titleMusicalTheoryCourse{
+        margin-top: 10vw;
+    }
+
+    .letterCourse{
+        margin-top: 1vw;
+        font-size: 3vw;
+    }
+
+    .Modulo1{
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .spaceModulo1{
+        width: 1vw;
+    }
+
+    .BotãoExercicio{
+        background-color: #3E4094;
+        color: white;
+        border: none;
+        padding: 2vw;
+        margin-top: 1vw;
+    }
+
+    .ExerciciesBox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .lineExerciciesBox{
+        width: 100%; 
+        height: 0.2vw; 
+        background-color: #BFE699; 
+        border: none; 
+        background-color: #CCCCCC;
+    }
+
+    .buttonIniciarExercicio{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        padding: 1vw 1vw 1vw 10vw;
+        border: none;
+        
+        
+    }
+
+    .BotãoApostila{
+        Background-color: white;
+        color: black;
+        border: none;
+        padding: 1vw 1vw 1vw 1vw;
+        margin-left: 0.2vw;
+        background-color: #3E4094;
+        color: white;
+        border: none;
+        padding: 2vw;
+        margin-top: 1vw;
+
+    }
+
+    .lineExerciciesBox1{
+        width: 100%; 
+        height: 0.1vw; 
+        background-color: #BFE699; 
+        border: none;
+        background-color: #CCCCCC;
+        margin-bottom: 10vw;
+    }
+
+    .clickedButton {
+        background-color: #3E4094;
+        color: white;
+    }
+    
+    .unclickedButton {
+        background-color: white;
+        color: black;
+    }
+
+    .titleHandout{
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonIniciarExercicio1 {
+        margin: 10vw auto; 
+        padding: 1vw 2vw; 
+        width: auto; 
+        border: none;
+        display: inline-block; 
+        text-align: center; 
+        background-color: #007bff; 
+        color: white; 
+        border-radius: 5px; 
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+    
+    .containerButton {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .buttonIniciarExercicio {
+        margin: 10vw auto; 
+        padding: 1vw 2vw; 
+        width: auto; 
+        border: none; 
+        display: inline-block; 
+        text-align: center; 
+        background-color: #007bff; 
+        color: white;
+        border-radius: 5px; 
+        font-size: 1.2rem; 
+        cursor: pointer; 
+    }
+    
+    
+    .containerButton {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .AlinBotApostilas{
+        margin-top: 10vw;
+    }
+
+    .titleHandout{
+        margin-top: 10vw;
+    }
+
+
+}
+
+
