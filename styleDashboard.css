@@ -3,8 +3,8 @@
 @media (min-width: 992px) {
    
     body.hidden {
-        visibility: hidden; /* Torna o conteúdo invisível */
-        pointer-events: none; /* Evita qualquer interação */
+        visibility: hidden;
+        pointer-events: none; 
     }
     
     body {
@@ -29,10 +29,10 @@
     .letterUser {
         color: white;
         font-family: "Roboto", sans-serif;
-        padding: 1vw 1vw; /* Ajuste de espaçamento para o texto */
+        padding: 1vw 1vw; 
         font-size: 1vw;
         display: inline-block;
-        vertical-align: middle; /* Garante que o texto fique alinhado ao centro da altura da linha */
+        vertical-align: middle; 
     }
     
     .topoAlin1{
@@ -66,10 +66,10 @@
         font-size: 0.9vw;
         background-color: #3E4094;
         border: none;
-        height: 100%; /* Garante que o botão tenha a altura completa da div topoAlin1 */
+        height: 100%; 
         display: flex;
-        align-items: center; /* Alinha verticalmente o texto dentro do botão */
-        justify-content: center; /* Centraliza o texto do botão */
+        align-items: center;
+        justify-content: center; 
     }
     
     .logoDashboard{
@@ -98,18 +98,19 @@
     /* Meio com a foto */
     
     .backgroundCenter {
-        background-image: url('img/PersonFl.png');
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        background-position: center; /* Centraliza a imagem */
-        background-size: cover; /* Faz a imagem preencher todo o container, cortando se necessário */
-        margin: 0; /* Remove margens externas */
-        padding: 0; /* Remove espaçamentos internos */
-        width: 98vw; /* Largura total da viewport */
-        height: 100vh; /* Altura total da viewport */
+        background-image: url('img/MeninoPartitura0.png');
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover; 
+        background-attachment: fixed; /* Ativa o efeito de Parallax */
+        margin: 0; 
+        padding: 0; 
+        width: 100%; /* Ajusta para ocupar toda a largura da tela */
+        height: 100vh; /* Ocupa a altura total da janela */
         display: flex;
-        justify-content: center; /* Centraliza o conteúdo filho horizontalmente */
-        align-items: center; /* Centraliza o conteúdo filho verticalmente */
-    }
+        justify-content: center;
+        align-items: center;
+    }    
     
     .AlinMid{
         display: flex;
@@ -136,45 +137,45 @@
     
     .buttonPrevious {
         display: flex;
-        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        justify-content: center; 
         margin-top: 5vw;
-        align-items: center; /* Centraliza o conteúdo verticalmente */
-        width: 80px; /* Largura do botão */
-        height: 80px; /* Altura do botão igual à largura para um círculo */
-        background-color: transparent; /* Fundo transparente */
-        border: 2px solid transparent; /* Borda verde */
-        border-radius: 50%; /* Bordas totalmente arredondadas */
-        color: #4CAF50; /* Cor do texto (mesma cor da borda) */
-        font-size: 18px; /* Tamanho da fonte */
-        cursor: pointer; /* Muda o cursor para indicar que é clicável */
-        transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+        align-items: center; 
+        width: 80px;
+        height: 80px; 
+        background-color: transparent; 
+        border: 2px solid transparent;
+        border-radius: 50%; 
+        color: #4CAF50; 
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
     }
     
     .buttonPrevious:hover {
-        background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente ao passar o mouse */
-        color: white; /* Cor do texto ao passar o mouse */
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white; 
     }
     
     .buttonNext {
         display: flex;
-        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        justify-content: center; 
         margin-top: 5vw;
-        align-items: center; /* Centraliza o conteúdo verticalmente */
-        width: 80px; /* Largura do botão */
-        height: 80px; /* Altura do botão igual à largura para um círculo */
-        background-color: transparent; /* Fundo transparente */
-        border: 2px solid transparent; /* Borda verde */
-        border-radius: 50%; /* Bordas totalmente arredondadas */
-        color: #4CAF50; /* Cor do texto (mesma cor da borda) */
-        font-size: 18px; /* Tamanho da fonte */
-        cursor: pointer; /* Muda o cursor para indicar que é clicável */
-        transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+        align-items: center; 
+        width: 80px; 
+        height: 80px; 
+        background-color: transparent;
+        border: 2px solid transparent; 
+        border-radius: 50%;
+        color: #4CAF50; 
+        font-size: 18px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, color 0.3s; 
         
     }
     
     .buttonNext:hover {
-        background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente ao passar o mouse */
-        color: white; /* Cor do texto ao passar o mouse */
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white; 
     }
     
     .iconPrevious, .iconNext{
@@ -208,10 +209,10 @@
     /* o meio vai até aqui */
     
     .musicTheoryMenu {
-        border: 0.1vw solid #A9A9A9; /* Borda sólida preta de 2px */
-        padding: 0vw; /* Espaçamento interno */
-        margin: 1.2vw; /* Espaçamento externo */
-        background-color: #f0f0f0; /* Cor de fundo */
+        border: 0.1vw solid #A9A9A9; 
+        padding: 0vw;
+        margin: 1.2vw; 
+        background-color: #f0f0f0;
     }
     
     .alinMusicTheory0{
@@ -237,7 +238,7 @@
     }
     
     .imgMusicTheory{
-        width: 250px;
+        width: 20vw;
     }
     
     .titleCourses{
@@ -252,11 +253,11 @@
     }
     
     .line {
-        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
-        height: 0.1vw; /* Espessura da linha */
-        background-color: #BFE699; /* Cor da linha */
-        border: none; /* Remove qualquer borda padrão */
-        margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+        width: 100%; 
+        height: 0.1vw; 
+        background-color: #BFE699; 
+        border: none; 
+        margin: 20px 0; 
     }
     
     .concCourse{
@@ -292,33 +293,33 @@
     }
     
     .progress-bar {
-        width: 240px; /* Largura da barra */
-        height: 20px; /* Altura da barra */
-        background-color: #f3f3f3; /* Cor de fundo da barra */
-        margin-left: 4px;
+        width: 19vw;
+        height: 1.5vw; 
+        background-color: #f3f3f3;
+        margin-left: 0.5vw;
         margin-bottom: 0.5vw;
         margin-top: 1vw;
-        border: 0.1vw solid #ccc; /* Borda da barra */
-        border-radius: 1vw; /* Bordas arredondadas */
-        overflow: hidden; /* Garante que o conteúdo não "vaze" */
-        position: relative; /* Necessário para posicionar o número */
+        border: 0.1vw solid #ccc; 
+        border-radius: 1vw; 
+        overflow: hidden; 
+        position: relative; 
     }
     
     .progress {
-        height: 100%; /* Altura igual à barra de progresso */
-        background-color: #4CAF50; /* Cor da barra de progresso */
-        width: 0%; /* O valor inicial da barra (dinâmico) */
-        transition: width 0.3s ease-in-out; /* Animação suave */
+        height: 100%; 
+        background-color: #4CAF50; 
+        width: 0%; 
+        transition: width 0.3s ease-in-out;
     }
     
     .progress-value {
-        position: absolute; /* Posiciona o número dentro da barra */
+        position: absolute; 
         top: 0;
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, 0); /* Ajusta para o centro */
-        color: black; /* Cor do texto */
-        font-weight: bold; /* Negrito */
-        font-size: 14px; /* Tamanho do texto */
+        left: 50%; 
+        transform: translate(-50%, 0); 
+        color: black; 
+        font-weight: bold; 
+        font-size: 14px; 
     }
     
     .boxCourse{
@@ -341,46 +342,46 @@
     
     /* Para posicionar a imagem relativa à área */
     .musicTheoryMenu {
-        position: relative; /* Necessário para posicionar elementos internos */
-        overflow: hidden; /* Evita que conteúdo extra ultrapasse o contêiner */
+        position: relative; 
+        overflow: hidden; 
     }
     
     /* Botão inicial invisível */
     .viewCourseButton {
-        display: none; /* Oculta o botão inicialmente */
-        position: absolute; /* Posiciona o botão sobre a imagem */
+        display: none; 
+        position: absolute; 
         font-family: "Roboto", sans-serif;
-        top: 50%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta para o centro */
-        background-color: #3E4094; /* Cor do botão */
-        color: white; /* Cor do texto */
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        background-color: #3E4094; 
+        color: white; 
         border: none;
         padding: 1vw 2vw;
         margin-top: -6vw;
         border-radius: 0.5vw;
         cursor: pointer;
         font-size: 1vw;
-        transition: all 0.3s ease; /* Animação para suavizar a aparição */
+        transition: all 0.3s ease; 
     }
     
     /* Escurece a imagem e mostra o botão ao passar o mouse */
     .musicTheoryMenu:hover .imgMusicTheory {
-        filter: brightness(50%); /* Escurece a imagem */
+        filter: brightness(50%);
         transition: all 0.3s ease;
     }
     
     .musicTheoryMenu:hover .viewCourseButton {
-        display: block; /* Mostra o botão */
+        display: block; 
     }
     
     /* Imagem do curso */
     .imgMusicTheory {
-        transition: all 0.3s ease; /* Suaviza a transição */
+        transition: all 0.3s ease;
     }
     
     .backgroundPlayAlongs{
-        background-image: url('img/videoBg.jpg');
+        background-image: url('img/videoBg0.png');
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -397,11 +398,11 @@
     }
     
     .lineEnd{
-        width: 100%; /* Largura da linha (100% da largura do elemento pai) */
-        height: 0.1vw; /* Espessura da linha */
-        background-color: #BFE699; /* Cor da linha */
-        border: none; /* Remove qualquer borda padrão */
-        margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+        width: 100%; 
+        height: 0.1vw; 
+        background-color: #BFE699; 
+        border: none; 
+        margin: 20px 0; 
         background-color: #CCCCCC;
     }
     
@@ -409,43 +410,41 @@
     /* Fundo geral */
     .backgroundPlayAlongs {
         position: relative;
-        width: 100%; /* Largura total */
-        height: 100vh; /* Altura da tela */
-        background: url('img/videoBg.jpg') no-repeat center center; /* Fundo com imagem */
-        background-size: cover; /* Faz a imagem cobrir a área */
-        background-attachment: fixed; /* Faz o fundo parecer fixo */
-        display: flex; /* Centraliza os filhos */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
+        width: 100%; 
+        height: 100vh; 
+        background: url('img/videoBg0.png') no-repeat center center; 
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
     }
     
     /* Conteúdo geral */
     .contentPlayAlongs {
-        text-align: center; /* Centraliza o texto */
-        background: white; /* Fundo branco */
-        /* padding: 30px 20px; Espaçamento interno */
-        
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-        max-width: 400px; /* Largura máxima da caixa */
+        text-align: center; 
+        background: white;         
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        max-width: 400px; 
     }
     
     /* Título */
     .textTitle {
         display: flex;
-        font-family: Arial, sans-serif; /* Fonte personalizada */
+        font-family: Arial, sans-serif; 
         justify-content: center;
         flex-direction: row;
-        font-size: 1.1vw; /* Tamanho do título */
-        color: #333; /* Cor do texto */
+        font-size: 1.1vw; 
+        color: #333; 
     
         
     }
     
     .textTitle2{
        
-        font-family: Arial, sans-serif; /* Fonte personalizada */ 
-        font-size: 1.1vw; /* Tamanho do título */
-        color: #333; /* Cor do texto */ 
+        font-family: Arial, sans-serif; 
+        font-size: 1.1vw; 
+        color: #333; 
         font-weight: bold;
     }
     
@@ -469,43 +468,28 @@
         font-family: Arial, sans-serif;
         font-size: 1.1vw;
         color: #666;
-        margin-bottom: 20px; /* Espaço entre texto e botão */
+        margin-bottom: 20px; 
     }
     
     /* Botão */
     .buttonPlayAlongs {
-        background-color: #3E4094; /* Cor do botão */
-        color: white; /* Cor do texto */
-        border: none; /* Remove bordas */    
-        padding: 2vw 10.5vw 2vw 10.5vw; /* Espaçamento interno */
-        font-size: 1vw; /* Tamanho do texto */
-        cursor: pointer; /* Cursor de clique */
-        transition: all 0.3s ease; /* Transição para hover */
+        background-color: #3E4094; 
+        color: white; 
+        border: none;     
+        padding: 2vw 10vw 2vw 10vw; 
+        font-size: 1vw; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
     }
     
     /* Hover no botão */
     .buttonPlayAlongs:hover {
-        background-color: #2d2f6d; /* Cor ao passar o mouse */
+        background-color: #2d2f6d;
     }
-    
-    /* Responsividade (opcional) */
-    /* @media (max-width: 768px) {
-        .contentPlayAlongs {
-            width: 90%; 
-        }
-    
-        .textTitle {
-            font-size: 1.2rem;
-        }
-    
-        .textSubtitle {
-            font-size: 0.9rem;
-        }
-    } */
-    
+       
     audio {
-        width: 100%; /* Faz o player ocupar toda a largura do contêiner */
-        max-width: 300px; /* Define um tamanho máximo */
+        width: 100%;
+        max-width: 300px; 
     }
     
     
@@ -526,27 +510,31 @@
     }
     
     .boxBaseboard {
-        background-color: #FFFFFF; /* Fundo branco */
-        border-radius: 10px; /* Borda arredondada */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
-        padding: 1vw 1vw 1vw 1vw; /* Espaçamento interno */
-        margin-left: 10vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        padding: 1vw 1vw 1vw 1vw; 
+        margin-left: 25vw;
         margin-top: 5vw;
-        max-width: 700px; /* Limita a largura máxima */
-        text-align: left; /* Alinha o texto à esquerda */
+        margin-bottom: 10vw;
+        max-width: 50vw; 
+        text-align: left;
     }
     
     .alinBaseboard {
         display: flex;
-        justify-content: flex-start;
-        
-        align-items: center;
+        justify-content: center;
         flex-direction: row;
-        margin-bottom: 20px; /* Espaço abaixo */
+        align-items: center;
+        flex-direction: row; 
+        margin-bottom: 20px; 
     }
     
     .title {
-        font-size: 2.5vw; /* Tamanho do texto */
+        font-size: 2.5vw; 
         font-weight: bold;
         color: black;
     }
@@ -554,49 +542,57 @@
     .baseboard {
         font-size: 2.5vw;
         font-weight: bold;
-        color: #3E4094; /* Cor roxa */
+        color: #3E4094;
     }
     
     .spaceBaseboard {
-        width: 10px; /* Espaço entre as palavras */
+        width: 10px; 
     }
     
     .textSection {
-        margin-bottom: 15px; /* Espaço entre as seções de texto */
-        color: #333; /* Cor do texto */
-        font-size: 16px; /* Tamanho do texto */
-        line-height: 1.6; /* Altura das linhas */
+        margin-bottom: 15px; 
+        color: #333; 
+        font-size: 16px; 
+        line-height: 1.6; 
     }
     
     .buttonReferences {
         display: block;
         
-        background-color: #3E4094; /* Cor de fundo roxa */
-        color: #FFFFFF; /* Cor do texto */
+        background-color: #3E4094;
+        color: #FFFFFF; 
         border: none;
-        border-radius: 0.2vw; /* Borda arredondada */
-        padding: 1vw 3vw 1vw 3vw; /* Espaçamento interno */
-        font-size: 0.9vw; /* Tamanho do texto */
+        border-radius: 0.2vw;
+        padding: 1vw 3vw 1vw 3vw; 
+        font-size: 0.9vw; 
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.3s ease; /* Animação */
+        transition: background-color 0.3s ease; 
     }
     
     .buttonReferences:hover {
-        background-color: #292b73; /* Escurece no hover */
+        background-color: #292b73; 
     }
     
     .baseboardImg {
-        position: absolute; /* Permite posicionamento preciso */
-        top: 143vw; /* Move a imagem para cima */
-        right: 10vw; /* Ajusta a distância da imagem para a direita */
-        z-index: -1; /* Coloca a imagem atrás dos outros elementos */
-        /* opacity: 0.8; */
+        position: absolute; 
+        top: 143vw; 
+        right: 10vw; 
+        z-index: -1; 
     }
     
     .spaceBaseboardBot{
         height: 12vw;
     }
+
+    .buttonNext{
+        visibility: hidden;
+    }
+
+    .buttonPrevious{
+        visibility: hidden;
+    }
+    
 
 }
 
@@ -656,6 +652,45 @@
         margin: 5px 10px;
         font-size: 13px;
     }
+
+    .AlinMid{
+        display: flex;
+        flex-direction: column;        
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    .letterT{
+        font-size: 3vw;
+    }
+
+    .letter1{
+        font-size: 6vw;
+    }
+
+    .letter2{
+        font-size: 6vw;
+    }
+
+    .buttonCenter{
+
+        padding: 2vw;        
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 5vw;
+        background-color: #3E4094;
+        border: none;
+        margin-top: 2vw;
+        border-radius: 1vw;
+    }
+    
+
+    .contentCenter{
+        display: flex;
+        justify-content: center;
+    }
+
+
 
     .AlinModulo {
         display: flex;
@@ -750,6 +785,415 @@
         font-size: 2vw;
     }
 
+
+    .contentCenter{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .backgroundCenter {
+        background-image: url('img/MeninoPartitura0.png');
+        background-attachment: fixed; /* Ativa o efeito de Parallax */
+        background-repeat: no-repeat; 
+        background-position: center;  /* Garante que a imagem ficará centralizada */
+        background-size: cover;  /* A imagem cobrirá toda a área sem distorcer */
+        width: 100vw; /* Garante que a largura será 100% da tela */
+        height: 50vh;  /* A altura é 50% da altura da tela */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+       
+    .alinMusicTheory0{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinMusicTheory1{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinMusicTheorS{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinApprenticeships{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10vw;
+    
+    }
+    
+        
+    .titleCourses{
+        display: flex;
+        justify-content: flex-start;    
+        color: #3E4094;
+        font-size: 2.5vw;
+        margin-left: 10vw;
+        margin-bottom: 4vw;
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+    
+    .line {
+        width: 100%; 
+        height: 0.1vw; 
+        background-color: #BFE699; 
+        border: none; 
+        margin: 20px 0; 
+    }
+    
+    .concCourse{
+        color: #3E4094;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-left: 0.5vw;
+    }
+    
+    
+    .courseIcon{
+        width: 5vw;
+        margin-left: 0.5vw;
+    }
+    
+    .spaceCourseCheck{
+        width: 20vw;
+    }
+    
+    .courseCheckIcon{
+        width: 4vw;
+        margin-left: 0.5vw;
+    }
+    
+    .checkSpace{
+        width: 0.5vw;
+    }
+    
+    .courseStage{
+        margin-top: 1vw;
+    }
+    
+    .progress-bar {
+        width: 60vw;
+        height: 3vw; 
+        background-color: #f3f3f3;
+        margin-left: 4px;
+        margin-bottom: 0.5vw;
+        margin-top: 1vw;
+        border: 0.1vw solid #ccc; 
+        border-radius: 1vw; 
+        overflow: hidden; 
+        position: relative; 
+    }
+    
+    .progress {
+        height: 100%; 
+        background-color: #4CAF50; 
+        width: 0%; 
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .progress-value {
+        position: absolute; 
+        top: 0;
+        left: 50%; 
+        transform: translate(-50%, 0); 
+        color: black; 
+        font-weight: bold; 
+        font-size: 14px; 
+    }
+    
+    .boxCourse{
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+    
+    .spaceBoxCourse{
+        height: 1vw;
+    }
+    
+    .progressCourse{
+        font-style: italic;
+    }
+    
+    .titleCourseBox{
+        font-weight: bold;
+        font-size: 4vw;
+    }
+    
+    /* Para posicionar a imagem relativa à área */
+    .musicTheoryMenu {
+        border: 0.1vw solid #A9A9A9; 
+        margin: 1.2vw; 
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: -10vw;
+        margin-bottom: 15vw;
+        position: relative;
+        width: 100%; /* Ajusta o tamanho para a largura da tela */
+        max-width: 75vw; /* Define um tamanho máximo */
+        padding: 0.1vw 0.1vw 0.1vw 0.1vw;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra opcional */
+    }
+    
+    /* Botão inicial invisível */
+    .viewCourseButton {
+        display: none; 
+        position: absolute; 
+        font-family: "Roboto", sans-serif;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        background-color: #3E4094; 
+        color: white; 
+        border: none;
+        padding: 1vw 2vw;
+        margin-top: -6vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        font-size: 2vw;
+        transition: all 0.3s ease; 
+    }
+    
+    /* Escurece a imagem e mostra o botão ao passar o mouse */
+    .musicTheoryMenu:hover .imgMusicTheory {
+        filter: brightness(50%);
+        transition: all 0.3s ease;
+    }
+    
+    .musicTheoryMenu:hover .viewCourseButton {
+        display: block; 
+    }
+    
+    /* Imagem do curso */
+    .imgMusicTheory {
+        width: 70vw;
+        transition: all 0.3s ease;
+    }
+
+
+    /*Play Alongs*/
+    .backgroundPlayAlongs {
+        position: relative;
+        width: 100%; 
+        height: 80vw; 
+        background: url('img/videoBg0.png') no-repeat center center; 
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    
+    
+    /* Título */
+    .textTitle {
+        display: flex;
+        font-family: Arial, sans-serif; 
+        justify-content: center;
+        flex-direction: row;
+        font-size: 2vw; 
+        color: #333; 
+    
+        
+    }
+    
+    .textTitle2{
+       
+        font-family: Arial, sans-serif; 
+        font-size: 2vw; 
+        color: #333; 
+        font-weight: bold;
+    }
+    
+    .AlongBoxNegrito{
+        font-weight: bold;
+    }
+    
+    .boxPlayAlongs{
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1vw 1vw 1vw 1vw;
+        
+    }
+    
+    .PlayAlongsTextBoxSpace{
+        width: 0.3vw;
+    }
+    
+    /* Subtítulo */
+    .textSubtitle {
+        font-family: Arial, sans-serif;
+        font-size: 2vw;
+        color: #666;
+        margin-bottom: 20px; 
+    }
+
+    /* Conteúdo geral */
+    .contentPlayAlongs {
+        text-align: center; 
+        background: white;         
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        max-width: 300vw; 
+        
+    }
+    
+    /* Botão */
+    .buttonPlayAlongs {
+        background-color: #3E4094; 
+        color: white; 
+        border: none;     
+        padding: 2vw 15vw 2vw 15vw; 
+        font-size: 2vw; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
+    }
+    
+    /* Hover no botão */
+    .buttonPlayAlongs:hover {
+        background-color: #2d2f6d;
+    }
+
+    .spacePlayAlongs{
+        width: 3vw;
+    }
+    
+       
+    audio {
+        width: 100%;
+        max-width: 300px; 
+    }
+    
+    
+    .PlayAlongAudio{
+        
+        color:  white;
+        font-size: 1.5vw;
+    }
+    
+    .PlayAlongAudioLetter{
+        display: flex;
+        justify-content: center;
+        font-size: 3vw;
+    
+    }
+    
+    .audioBox{
+        margin-top: 1vw;
+    }
+
+    .frameCourses{
+        margin-bottom: -20vw;
+    }
+    
+
+    /*Baseboard*/
+
+    .alinBaseboard{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+
+    .boxBaseboard {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        padding: 1vw 1vw 1vw 1vw; 
+        margin-left: 25vw;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        max-width: 50vw; 
+        text-align: left;
+    }
+    
+    .alinBaseboard {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row; 
+        margin-bottom: 20px; 
+    }
+    
+    .title {
+        font-size: 4vw; 
+        font-weight: bold;
+        color: black;
+    }
+    
+    .baseboard {
+        font-size: 4vw;
+        font-weight: bold;
+        color: #3E4094;
+    }
+    
+    .spaceBaseboard {
+        width: 10px; 
+    }
+    
+    .textSection {
+        margin-bottom: 15px; 
+        color: #333; 
+        font-size: 2vw; 
+        line-height: 1.6; 
+    }
+    
+    .buttonReferences {
+        display: block;
+        
+        background-color: #3E4094;
+        color: #FFFFFF; 
+        border: none;
+        border-radius: 0.2vw;
+        padding: 1vw 3vw 1vw 3vw; 
+        font-size: 2vw; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+    
+    .buttonReferences:hover {
+        background-color: #292b73; 
+    }
+    
+    .baseboardImg {
+        position: absolute; 
+        top: 143vw; 
+        right: 10vw; 
+        z-index: -1; 
+    }
+    
+    .spaceBaseboardBot{
+        height: 12vw;
+    }
+
+    .buttonNext{
+        visibility: hidden;
+    }
+
+    .buttonPrevious{
+        visibility: hidden;
+    }
+
     
 }
 
@@ -757,7 +1201,7 @@
 @media (max-width: 767px) {
 
 
-.topoAlin1{
+    .topoAlin1{
 
         display: flex;
         justify-content: center;
@@ -836,6 +1280,8 @@
         font-family: "Roboto", sans-serif;
     }
 
+    
+
     .letterTheoryMusicalTop{
         visibility: hidden;
     }
@@ -885,6 +1331,455 @@
         display: flex;
         justify-content: center;
     }
+
+
+
+    /* Parte baixa da página a partir da figura*/
+
+    .backgroundCenter {
+        background-image: url('img/MeninoPartitura0.png');
+        background-attachment: fixed; /* Ativa o efeito de Parallax */
+        background-repeat: no-repeat; 
+        background-position: center;  /* Garante que a imagem ficará centralizada */
+        background-size: cover;  /* A imagem cobrirá toda a área sem distorcer */
+        width: 100vw; /* Garante que a largura será 100% da tela */
+        height: 50vh;  /* A altura é 50% da altura da tela */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AlinMid{
+        display: flex;
+        flex-direction: column;        
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    .letterT{
+        font-size: 3vw;
+    }
+
+    .letter1{
+        font-size: 6vw;
+    }
+
+    .letter2{
+        font-size: 6vw;
+    }
+
+    .buttonCenter{
+
+        padding: 2vw;        
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 5vw;
+        background-color: #3E4094;
+        border: none;
+        margin-top: 2vw;
+        border-radius: 1vw;
+    }
+    
+
+    .contentCenter{
+        display: flex;
+        justify-content: center;
+    }
+
+       
+    .alinMusicTheory0{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinMusicTheory1{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinMusicTheorS{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .alinApprenticeships{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10vw;
+    
+    }
+    
+        
+    .titleCourses{
+        display: flex;
+        justify-content: flex-start;    
+        color: #3E4094;
+        font-size: 5vw;
+        margin-left: 10vw;
+        margin-bottom: 4vw;
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+    
+    .line {
+        width: 100%; 
+        height: 0.1vw; 
+        background-color: #BFE699; 
+        border: none; 
+        margin: 20px 0; 
+    }
+    
+    .concCourse{
+        color: #3E4094;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-left: 0.5vw;
+    }
+    
+    
+    .courseIcon{
+        width: 5vw;
+        margin-left: 0.5vw;
+    }
+    
+    .spaceCourseCheck{
+        width: 20vw;
+    }
+    
+    .courseCheckIcon{
+        width: 4vw;
+        margin-left: 0.5vw;
+    }
+    
+    .checkSpace{
+        width: 0.5vw;
+    }
+    
+    .courseStage{
+        margin-top: 1vw;
+    }
+    
+    .progress-bar {
+        width: 60vw;
+        height: 4vw; 
+        background-color: #f3f3f3;
+        margin-left: 4px;
+        margin-bottom: 0.5vw;
+        margin-top: 1vw;
+        border: 0.1vw solid #ccc; 
+        border-radius: 1vw; 
+        overflow: hidden; 
+        position: relative; 
+    }
+    
+    .progress {
+        height: 100%; 
+        background-color: #4CAF50; 
+        width: 0%; 
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .progress-value {
+        position: absolute; 
+        top: 0;
+        left: 50%; 
+        transform: translate(-50%, 0); 
+        color: black; 
+        font-weight: bold; 
+        font-size: 2.5vw; 
+    }
+    
+    .boxCourse{
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+    
+    .spaceBoxCourse{
+        height: 1vw;
+    }
+    
+    .progressCourse{
+        font-style: italic;
+    }
+
+    .spacePlayAlongs{
+        width: 3vw;
+    }
+    
+    .titleCourseBox{
+        font-weight: bold;
+        font-size: 4vw;
+    }
+    
+    /* Para posicionar a imagem relativa à área */
+    .musicTheoryMenu {
+        border: 0.1vw solid #A9A9A9; 
+        margin: 1.2vw; 
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: -10vw;
+        margin-bottom: 15vw;
+        position: relative;
+        width: 100%; /* Ajusta o tamanho para a largura da tela */
+        max-width: 75vw; /* Define um tamanho máximo */
+        padding: 0.1vw 0.1vw 0.1vw 0.1vw;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra opcional */
+    }
+    
+    /* Botão inicial invisível */
+    .viewCourseButton {
+        display: none; 
+        position: absolute; 
+        font-family: "Roboto", sans-serif;
+        top: 35%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        background-color: #3E4094; 
+        color: white; 
+        border: none;
+        padding: 1vw 2vw;
+        margin-top: -6vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        font-size: 4vw;
+        transition: all 0.3s ease; 
+    }
+    
+    /* Escurece a imagem e mostra o botão ao passar o mouse */
+    .musicTheoryMenu:hover .imgMusicTheory {
+        filter: brightness(50%);
+        transition: all 0.3s ease;
+    }
+    
+    .musicTheoryMenu:hover .viewCourseButton {
+        display: block; 
+    }
+    
+    /* Imagem do curso */
+    .imgMusicTheory {
+        width: 70vw;
+        transition: all 0.3s ease;
+    }
+
+    .backgroundPlayAlongs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%; 
+        height: 80vw; 
+        background: url('img/videoBg0.png') no-repeat center center; 
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    
+    
+    /* Título */
+    .textTitle {
+        display: flex;
+        font-family: Arial, sans-serif; 
+        justify-content: center;
+        flex-direction: row;
+        font-size: 2vw; 
+        color: #333; 
+    
+        
+    }
+    
+    .textTitle2{
+       
+        font-family: Arial, sans-serif; 
+        font-size: 2vw; 
+        color: #333; 
+        font-weight: bold;
+    }
+    
+    .AlongBoxNegrito{
+        font-weight: bold;
+    }
+    
+    .boxPlayAlongs{
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1vw 1vw 1vw 1vw;
+        
+    }
+    
+    .PlayAlongsTextBoxSpace{
+        width: 0.3vw;
+    }
+    
+    /* Subtítulo */
+    .textSubtitle {
+        font-family: Arial, sans-serif;
+        font-size: 2vw;
+        color: #666;
+        margin-bottom: 20px; 
+    }
+
+    /* Conteúdo geral */
+    .contentPlayAlongs {
+        text-align: center; 
+        background: white;         
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        max-width: 300vw; 
+        
+    }
+    
+    /* Botão */
+    .buttonPlayAlongs {
+        background-color: #3E4094; 
+        color: white; 
+        border: none;     
+        padding: 2vw 15vw 2vw 15vw; 
+        font-size: 2vw; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
+    }
+    
+    /* Hover no botão */
+    .buttonPlayAlongs:hover {
+        background-color: #2d2f6d;
+    }
+       
+    .audioBox {
+        display: flex;
+        justify-content: center; /* Centraliza o player dentro da caixa */
+        margin: 1rem auto; /* Adiciona espaçamento e centraliza horizontalmente */
+       
+        max-width: 1000vw; /* Define um limite máximo para a largura */
+    }
+    
+    /* audio {
+        width: 200%; 
+        
+    }
+     */
+    .PlayAlongAudio{
+        
+        color:  white;
+        font-size: 1.5vw;
+    }
+    
+    .PlayAlongAudioLetter{
+        display: flex;
+        justify-content: center;
+        font-size: 3vw;
+    
+    }
+    
+    
+
+    .frameCourses{
+        margin-bottom: -20vw;
+    }
+
+    /*Baseboard*/
+
+    .alinBaseboard{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+
+    .boxBaseboard {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        padding: 1vw 1vw 1vw 1vw; 
+        margin-left: 25vw;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        max-width: 50vw; 
+        text-align: left;
+    }
+    
+    .alinBaseboard {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row; 
+        margin-bottom: 20px; 
+    }
+    
+    .title {
+        font-size: 4vw; 
+        font-weight: bold;
+        color: black;
+    }
+    
+    .baseboard {
+        font-size: 4vw;
+        font-weight: bold;
+        color: #3E4094;
+    }
+    
+    .spaceBaseboard {
+        width: 10px; 
+    }
+    
+    .textSection {
+        margin-bottom: 15px; 
+        color: #333; 
+        font-size: 2vw; 
+        line-height: 1.6; 
+    }
+    
+    .buttonReferences {
+
+        display: block;        
+        background-color: #3E4094;
+        color: #FFFFFF; 
+        border: none;
+        border-radius: 1vw;
+        padding: 1vw 3vw 1vw 3vw; 
+        font-size: 2vw; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+    
+    .buttonReferences:hover {
+        background-color: #292b73; 
+    }
+    
+    .baseboardImg {
+        position: absolute; 
+        top: 143vw; 
+        right: 10vw; 
+        z-index: -1; 
+    }
+    
+    .spaceBaseboardBot{
+        height: 12vw;
+    }
+
+    .buttonNext{
+        visibility: hidden;
+    }
+
+    .buttonPrevious{
+        visibility: hidden;
+    }
+
+
 
 
 }
