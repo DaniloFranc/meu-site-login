@@ -73,96 +73,96 @@
     <!-- Incluindo a biblioteca Inputmask -->
 <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
 
-<div class="form-container">
-    <h2>Cadastro de Usuário</h2>
-    <form  method="POST">
-        <!-- Campo Nome -->
-        <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-        </div>
+    <div class="form-container">
+        <h2>Cadastro de Usuário</h2>
+        <form  method="POST">
+            <!-- Campo Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
 
-        <!-- Campo E-mail -->
-        <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+            <!-- Campo E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <!-- Campo Senha -->
-        <div class="form-group">
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+            <!-- Campo Senha -->
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
-        <!-- Campo Nível de Acesso -->
-        <div class="form-group">
-            <label for="nivel_acesso">Nível de Acesso:</label>
-            <select id="nivel_acesso" name="nivel_acesso" required>
-                <option value="1">Administrador</option>
-                <option value="2">Professor</option>
-                <option value="3">Aluno</option>
-            </select>
-        </div>
+            <!-- Campo Nível de Acesso -->
+            <div class="form-group">
+                <label for="nivel_acesso">Nível de Acesso:</label>
+                <select id="nivel_acesso" name="nivel_acesso" required>
+                    <option value="1">Administrador</option>
+                    <option value="2">Professor</option>
+                    <option value="3">Aluno</option>
+                </select>
+            </div>
 
-        <!-- Campo Cadastro -->
-        <div class="form-group">
-            <label for="dataCadastro">Cadastro:</label>
-            <input type="text" id="dataCadastro" name="dataCadastro" readonly>
-        </div>
+            <!-- Campo Cadastro -->
+            <div class="form-group">
+                <label for="dataCadastro">Cadastro:</label>
+                <input type="text" id="dataCadastro" name="dataCadastro" readonly>
+            </div>
 
-        <!-- Campo Contatos -->
-        <div class="form-group">
-            <label for="contatos">Contatos:</label>
-            <input type="tel" id="contatos" name="contatos">
-        </div>
+            <!-- Campo Contatos -->
+            <div class="form-group">
+                <label for="contatos">Contatos:</label>
+                <input type="tel" id="contatos" name="contatos">
+            </div>
 
-        <!-- Campo Responsável -->
-        <div class="form-group">
-            <label for="responsavel">Responsável:</label>
-            <input type="text" id="responsavel" name="responsavel">
-        </div>
+            <!-- Campo Responsável -->
+            <div class="form-group">
+                <label for="responsavel">Responsável:</label>
+                <input type="text" id="responsavel" name="responsavel">
+            </div>
 
-        <!-- Campo Contatos do Responsável -->
-        <div class="form-group">
-            <label for="contatos_responsavel">Contatos do Responsável:</label>
-            <input type="tel" id="contatos_responsavel" name="contatos_responsavel">
-        </div>
+            <!-- Campo Contatos do Responsável -->
+            <div class="form-group">
+                <label for="contatos_responsavel">Contatos do Responsável:</label>
+                <input type="tel" id="contatos_responsavel" name="contatos_responsavel">
+            </div>
 
-        <!-- Campo Tags -->
-        <div class="form-group">
-            <label for="tags">Tags:</label>
-            <input type="text" id="tags" name="tags">
-        </div>
+            <!-- Campo Tags -->
+            <div class="form-group">
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags">
+            </div>
 
-        <!-- Campo Redes Sociais -->
-        <div class="form-group">
-            <label for="redes_sociais">Redes Sociais:</label>
-            <input type="text" id="redes_sociais" name="redes_sociais">
-        </div>
+            <!-- Campo Redes Sociais -->
+            <div class="form-group">
+                <label for="redes_sociais">Redes Sociais:</label>
+                <input type="text" id="redes_sociais" name="redes_sociais">
+            </div>
 
-        <!-- Campo Planos Vigentes -->
-        <div class="form-group">
-            <label for="planos_vigentes">Planos Vigentes:</label>
-            <input type="text" id="planos_vigentes" name="planos_vigentes">
-        </div>
+            <!-- Campo Planos Vigentes -->
+            <div class="form-group">
+                <label for="planos_vigentes">Planos Vigentes:</label>
+                <input type="text" id="planos_vigentes" name="planos_vigentes">
+            </div>
 
-        <!-- Campo Status -->
-        <div class="form-group">
-            <label for="status">Status:</label>
-            <select id="status" name="status">
-                <option value="ativo">Ativo</option>
-                <option value="inativo">Inativo</option>
-                <option value="pendente">Pendente</option>
-            </select>
-        </div>
+            <!-- Campo Status -->
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                    <option value="pendente">Pendente</option>
+                </select>
+            </div>
 
-        <!-- Ações -->
-        <div class="button-container">
-            <button type="submit" id="submitIncluir" name="incluir">Incluir</button>
-            <button type="submit" id="submitAlterar" name="alterar">Alterar</button>
-        </div>
-    </form>
-</div>
+            <!-- Ações -->
+            <div class="button-container">
+                <button type="submit" id="submitIncluir" name="incluir">Incluir</button>
+                <button type="submit" id="submitAlterar" name="alterar">Alterar</button>
+            </div>
+        </form>
+    </div>
 
 
     
@@ -170,191 +170,9 @@
 
 
     <div id="nivelAcessoDisplay" class="hidden"></div>
+    <script src="dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Usando a versão completa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script>
-    // Aplica a máscara de telefone nos campos de contatos e contatos_responsavel
-    const mask = new Inputmask('(99) 99999-9999');
-    mask.mask(document.querySelectorAll('#contatos, #contatos_responsavel'));
-
-    document.querySelector('form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Evita o envio padrão do formulário
-
-        const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
-        const senha = document.getElementById('password').value;
-        const nvlAcesso = document.getElementById('nivel_acesso').value;
-        const dataCadastro = document.getElementById('dataCadastro').value;
-        const contatos = document.getElementById('contatos').value;
-        const responsavel = document.getElementById('responsavel').value;
-        const contatosResponsavel = document.getElementById('contatos_responsavel').value;
-        const tags = document.getElementById('tags').value;
-        const redesSociais = document.getElementById('redes_sociais').value;
-        const planosVigentes = document.getElementById('planos_vigentes').value;
-        const status = document.getElementById('status').value;
-
-        const userData = {
-            nome,
-            email,
-            senha,
-            nvlAcesso,
-            dataCadastro,
-            contatos,
-            responsavel,
-            contatosResponsavel,
-            tags,
-            redesSociais,
-            planosVigentes,
-            status
-        };
-
-        fetch('https://nova-pasta-5.onrender.com/register', {  // A URL do seu servidor
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert('Usuário cadastrado com sucesso!');
-            } else {
-                alert('Erro ao cadastrar usuário: ' + data.message);
-            }
-        })
-        .catch(error => {
-            console.error('Erro na requisição:', error);
-            alert('Erro ao enviar os dados.');
-        });
-    });
-
-    // Preenche automaticamente o campo "cadastro" com a data atual no formato Dia/Mês/Ano
-    window.onload = function() {
-        const dataCadastroField = document.getElementById('dataCadastro');
-        const today = new Date();
-        
-        // Formata a data no formato Dia/Mês/Ano (DD/MM/YYYY)
-        const day = String(today.getDate()).padStart(2, '0');  // Adiciona o 0 à esquerda se o dia for menor que 10
-        const month = String(today.getMonth() + 1).padStart(2, '0');  // Adiciona o 0 à esquerda se o mês for menor que 10 (meses começam do 0)
-        const year = today.getFullYear();  // Obtém o ano
-        
-        const formattedDate = `${day}/${month}/${year}`;  // Junta a data no formato DD/MM/YYYY
-        
-        dataCadastroField.value = formattedDate;  // Define o valor do campo como a data atual
-    };
-</script>
-
-
-<script>
-    document.getElementById('nome').addEventListener('blur', function() {
-    const nome = this.value;
-
-    if (nome) {
-        // Envia uma requisição ao backend para buscar os dados do usuário
-        fetch(`https://nova-pasta-5.onrender.com/usuarios?nome=${nome}`)
-            .then(response => response.json())
-            .then(data => {
-                if (data.usuarios && data.usuarios.length > 0) {
-                    const usuario = data.usuarios[0]; // Considera o primeiro usuário retornado
-
-                    // Preenche os campos com os dados do usuário
-                    document.getElementById('email').value = usuario.email || '';
-                    document.getElementById('password').value = usuario.senha || '';
-                    document.getElementById('nivel_acesso').value = usuario.nvlAcesso || 'usuario';
-                    document.getElementById('contatos').value = usuario.contatos || '';
-                    document.getElementById('responsavel').value = usuario.responsavel || '';
-                    document.getElementById('contatos_responsavel').value = usuario.contatosResponsavel || '';
-                    document.getElementById('tags').value = usuario.tags || '';
-                    document.getElementById('redes_sociais').value = usuario.redesSociais || '';
-                    document.getElementById('planos_vigentes').value = usuario.planosVigentes || '';
-                    document.getElementById('status').value = usuario.status || 'ativo';
-
-                    // Preencher a data de cadastro (em formato DD/MM/YYYY)
-                    const dataCadastroDate = new Date(usuario.dataCadastro); // Converte a string de data em um objeto Date
-                    const day = String(dataCadastroDate.getDate()).padStart(2, '0');
-                    const month = String(dataCadastroDate.getMonth() + 1).padStart(2, '0');
-                    const year = dataCadastroDate.getFullYear();
-                    const formattedDate = `${day}/${month}/${year}`; // Formato desejado: DD/MM/YYYY
-                    document.getElementById('dataCadastro').value = formattedDate;
-
-                    // Desativa a opção de adicionar um novo usuário
-                    document.getElementById('dataCadastro').disabled = true;
-                    document.getElementById('email').disabled = true;
-                    document.getElementById('password').disabled = true;
-                    document.getElementById('nivel_acesso').disabled = true;
-                    document.getElementById('contatos').disabled = true;
-                    document.getElementById('responsavel').disabled = true;
-                    document.getElementById('contatos_responsavel').disabled = true;
-                    document.getElementById('tags').disabled = true;
-                    document.getElementById('redes_sociais').disabled = true;
-                    document.getElementById('planos_vigentes').disabled = true;
-                    document.getElementById('status').disabled = true;
-                    alert('Usuário encontrado!');
-                } else {
-                    // Caso o usuário não seja encontrado, permite o preenchimento dos campos para criar um novo usuário
-                    alert('Usuário não encontrado. Você pode adicionar um novo usuário!');
-                    
-                    // Habilita os campos para inclusão de um novo usuário
-                    document.getElementById('email').disabled = false;
-                    document.getElementById('password').disabled = false;
-                    document.getElementById('nivel_acesso').disabled = false;
-                    document.getElementById('contatos').disabled = false;
-                    document.getElementById('responsavel').disabled = false;
-                    document.getElementById('contatos_responsavel').disabled = false;
-                    document.getElementById('tags').disabled = false;
-                    document.getElementById('redes_sociais').disabled = false;
-                    document.getElementById('planos_vigentes').disabled = false;
-                    document.getElementById('status').disabled = false;
-                    document.getElementById('dataCadastro').disabled = false;
-
-                    // Limpa os campos para um novo cadastro
-                    document.getElementById('email').value = '';
-                    document.getElementById('password').value = '';
-                    document.getElementById('nivel_acesso').value = 'usuario';
-                    document.getElementById('contatos').value = '';
-                    document.getElementById('responsavel').value = '';
-                    document.getElementById('contatos_responsavel').value = '';
-                    document.getElementById('tags').value = '';
-                    document.getElementById('redes_sociais').value = '';
-                    document.getElementById('planos_vigentes').value = '';
-                    document.getElementById('status').value = 'ativo';
-
-                    // Preencher a data de cadastro com a data de hoje (em formato DD/MM/YYYY)
-                    const today = new Date();
-                    const todayDay = String(today.getDate()).padStart(2, '0');
-                    const todayMonth = String(today.getMonth() + 1).padStart(2, '0');
-                    const todayYear = today.getFullYear();
-                    const todayDate = `${todayDay}/${todayMonth}/${todayYear}`;
-                    document.getElementById('dataCadastro').value = todayDate; // Preenche o campo com a data de hoje
-                }
-            })
-            .catch(error => {
-                console.error('Erro ao buscar os dados do usuário:', error);
-                alert('Erro ao buscar os dados.');
-            });
-    }
-    });
-    
-    // Adiciona o event listener para o campo "Responsável"
-    document.getElementById('responsavel').addEventListener('change', function() {
-        const responsavel = this.value;
-    
-        // Se o responsável for "nenhum", desabilita o campo "Contatos do responsável" e o limpa
-        if (responsavel === 'nenhum') {
-            document.getElementById('contatos_responsavel').value = ''; // Limpa o valor
-            document.getElementById('contatos_responsavel').disabled = true; // Desabilita o campo
-        } else {
-            document.getElementById('contatos_responsavel').disabled = false; // Habilita o campo
-        }
-    });
-</script>
-    
-    
-    
-
-
-<script src="dashboard.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Usando a versão completa -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </html>
