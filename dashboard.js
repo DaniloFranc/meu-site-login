@@ -1,12 +1,42 @@
+const nvlAcesso = localStorage.getItem('nvlAcesso');
+
+    // Verifica se o nvlAcesso existe
+if (nvlAcesso) {
+        // Exibe o nvlAcesso no elemento com id 'nivelAcessoDisplay'
+    document.getElementById('nivelAcessoDisplay').innerText = `Nível de Acesso: ${nvlAcesso}`;
+} else {
+        // Se o nvlAcesso não estiver disponível, exibe uma mensagem padrão
+    document.getElementById('nivelAcessoDisplay').innerText = 'Nível de Acesso não encontrado';
+}
+
+
+
+// Verifica o nível de acesso
+if (nvlAcesso === '2' || nvlAcesso === '3') {
+    // Se o nível de acesso for 2 ou 3, oculta a aba de "Usuários"
+    const usuariosMenuItem = document.querySelector('a[href="CrudUsuarios.html"]');
+    if (usuariosMenuItem) {
+        usuariosMenuItem.closest('li').style.display = 'none';  // Esconde o item de menu
+    }
+}
+
+// Exibe a mensagem de boas-vindas ao usuário
+const nomeUsuario = localStorage.getItem('nome');
+if (nomeUsuario) {
+    document.getElementById('welcome-message').innerText = `Bem-vindo, ${nomeUsuario}`;
+}
+
+
 async function validateAccess() {
     const token = localStorage.getItem('token');
     if (!token) {
         redirectToLogin('Você precisa fazer login para acessar esta página.');
         return;
     }
+    
 
     try {
-        const response = await fetch('https://nova-pasta-5.onrender.com/dashboard-data', {
+        const response = await fetch('http://localhost:5000/dashboard-data', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`, // Envia o token no cabeçalho
@@ -26,6 +56,8 @@ async function validateAccess() {
         redirectToLogin('Sessão expirada ou inválida. Faça login novamente.');
     }
 }
+
+
 
 // Função para redirecionar ao login com mensagem
 function redirectToLogin(message) {
@@ -419,6 +451,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//Função de Inclusão de Usuários no formulário
+
+
+
+
+
+
+    
+
+
+//Função do CRUD tabela
+
+
+
+// Chama a função para carregar os dados assim que a página for carregada
+window.onload = loadUserData;
 
 
 

@@ -1,10 +1,58 @@
 
 /* header começo */
 @media (min-width: 992px) {
+
+
+    /*SubMenu*/
+
+    /* Personalize a cor de fundo do submenu */
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    /* Estilo dos links no submenu */
+    .dropdown-item {
+        color: #333;
+        padding: 10px 15px;
+    }
+
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        color: #000;
+    }
+
+    /*SubMenu*/
+
+
+    .highlight {
+        animation: highlightEffect 2s ease-out;
+    }
+    
+    @keyframes highlightEffect {
+        0% {
+            background-color: rgba(0, 26, 255, 0.5);
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
+    /*mexer depois na barra de opções acima da página*/
+    
+    .MusicNavBar{
+        margin-top: 1vw;
+    }
+
+    /*mexer depois na barra de opções acima da página*/
    
     body.hidden {
         visibility: hidden;
         pointer-events: none; 
+    }
+
+    .hidden{
+        visibility: hidden;
     }
     
     body {
@@ -592,12 +640,196 @@
     .buttonPrevious{
         visibility: hidden;
     }
+
+    /*Página Crud*/
+
+    .buttonCenterCrud{
+
+        padding: 0.5vw;        
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1vw;
+        background-color: #3E4094;
+        border: none;
+        margin-top: 2vw;
+        border-radius: 0.5vw;
+    }
+
+    .buttonCenterExport{
+        padding: 0.5vw;        
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1vw;
+        background-color: #3E4094;
+        border: none;        
+        border-radius: 0.5vw;
+    }
+
+    .spaceBetweenButtonCrud{
+        width: 1vw;
+    }
+
+    .buttonCenterImport{
+        padding: 0.5vw;        
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1vw;
+        
+        background-color: #3E4094;
+        border: none;        
+        border-radius: 0.5vw;
+    }
     
+    .newRegisterBox{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .search-box {
+        display: flex;
+        align-items: center;
+        width: 20vw; /* Ajuste o tamanho conforme necessário */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .search-box input[type="text"] {
+        flex: 1;
+        border: none;
+        padding: 0.2vw;
+        outline: none;
+    }
+
+    .search-box button {
+        background-color: #3f51b5; /* Cor azul do botão */
+        border: none;
+        padding: 1vw 1vw;
+        cursor: pointer;
+    }
+
+    .search-box button img {
+        width: 1vw; /* Tamanho do ícone */
+        height: 1vw;
+    }
+
+    .search-box input[type="text"]::placeholder {
+        color: #aaa; /* Cor do placeholder */
+    }
+
+    .search-box button:hover {
+        background-color: #2c3e99; /* Cor ao passar o mouse */
+    }
+
+    .registerSearchBox{
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+    }
+
+    .spaceSearch{
+        width: 70vw;
+    }
+    
+    /*Tabela Usuários*/
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    /*Formulário Usuários*/
+
+    
+    .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    textarea {
+        resize: vertical;
+    }
+    .button-container {
+        text-align: center;
+    }
+    .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    .button-container button:hover {
+        background-color: #0056b3;
+    }
 
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .highlight {
+        animation: highlightEffect 2s ease-out;
+    }
+    
+    @keyframes highlightEffect {
+        0% {
+            background-color: rgba(0, 26, 255, 0.5);
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
    
     header {
         padding: 10px 15px;
@@ -1199,6 +1431,19 @@
 
 
 @media (max-width: 767px) {
+
+    .highlight {
+        animation: highlightEffect 2s ease-out;
+    }
+    
+    @keyframes highlightEffect {
+        0% {
+            background-color: rgba(0, 26, 255, 0.5);
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
 
 
     .topoAlin1{

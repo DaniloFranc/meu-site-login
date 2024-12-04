@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleDashboard.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<header>
+    <div class="topoAlin1">
+        <div class="AlinUsuario">
+            <img src="icons/person_70dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="iconUser"></img>
+            <div class="letterUser" id="welcome-message"></div>
+        </div>
+        <div class="spaceTop"></div>
+        <div>
+            <button id="logoutButton" class="logoutButton">Sair</button>
+        </div>
+    </div> 
+    <div class="topoAlin2">
+        <div>
+            <a href="dashboard.html">
+                <img src="img/LogoEmPauta.png" class="logoDashboard" alt="Logo">
+            </a>
+        </div>
+        <div class="spaceLogo"></div>
+        <div class="MusicNavBar">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Área do Aluno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Material de Apoio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestão
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+                                    <li><a class="dropdown-item" href="#">Usuários</a></li>
+                                    <li><a class="dropdown-item" href="#">Plano e Pagamentos</a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar Biblioteca</a></li>
+                                    <li><a class="dropdown-item" href="#">Quadro de Horários</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body class="hidden">
+    <div>
+        <div class="newRegisterBox">
+            <a href="novoCadastroUsuario.html">
+                <button class="buttonCenterCrud">+ Novo Cadastro</button>
+            </a>            
+        </div>
+        <div>
+            <div class="registerSearchBox">
+                <button class="buttonCenterExport" id="exportButton">Exportar</button>
+                <div class="spaceBetweenButtonCrud"></div>
+                <button class="buttonCenterImport">Importar</button>
+                <div class="spaceSearch"></div>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Pesquisar">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <table id="userTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Nível de Acesso</th>
+                    <th>Cadastro</th>
+                    <th>Contatos</th>
+                    <th>Responsável</th>
+                    <th>Contatos do Responsável</th>
+                    <th>Tags</th>
+                    <th>Redes Sociais</th>
+                    <th>Avaliações Recebidas</th>
+                    <th>Nível de Satisfação</th>
+                    <th>Planos Vigentes</th>
+                    <th>Parcelas Em Atraso</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- As linhas serão adicionadas aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+    <div id="nivelAcessoDisplay" class="hidden"></div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+<script>
+    // Função para preencher a tabela com os dados dos usuários
+    function preencherTabelaUsuarios(usuarios) {
+        const tbody = document.getElementById('userTableBody');
+        tbody.innerHTML = ''; // Limpa a tabela antes de adicionar novas linhas
+
+        usuarios.forEach(usuario => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${usuario.nome}</td>
+                <td>${usuario.nvlAcesso}</td>
+                <td>${usuario.dataCadastro}</td>
+                <td>${usuario.contatos}</td>
+                <td>${usuario.responsavel}</td>
+                <td>${usuario.contatosResponsavel}</td>
+                <td>${usuario.tags}</td>
+                <td>${usuario.redesSociais}</td>
+                <td>${usuario.avlRecebidas}</td>
+                <td>${usuario.nvlSatisfacao}</td>
+                <td>${usuario.plnsVigentes}</td>
+                <td>${usuario.parcEmAtraso}</td>
+                <td>${usuario.status}</td>
+                <td>${usuario.acoes}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    // Função para buscar usuários com base no nome
+    function buscarUsuarios(nome = '') {
+        const url = nome ? `http://localhost:5000/usuarios?nome=${nome}` : 'http://localhost:5000/usuarios';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.usuarios) {
+                    preencherTabelaUsuarios(data.usuarios);
+                } else {
+                    console.error('Estrutura de dados inesperada:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao buscar usuários:', error);
+            });
+    }
+
+    // Função para exportar dados da tabela para um arquivo Excel
+    function exportToExcel() {
+        const table = document.getElementById('userTable');
+        const wb = XLSX.utils.table_to_book(table, { sheet: "Usuarios" });
+        XLSX.writeFile(wb, 'usuarios.xlsx');
+    }
+
+    // Adiciona o evento de clique no botão "Exportar"
+    document.getElementById('exportButton').addEventListener('click', exportToExcel);
+
+    // Adiciona o evento de pesquisa na caixa de texto
+    document.querySelector('input[type="text"]').addEventListener('input', (e) => {
+        const nome = e.target.value.trim(); // Obtém o nome digitado
+        buscarUsuarios(nome); // Chama a função de busca
+    });
+
+    // Chama a função para buscar todos os usuários ao carregar a página
+    window.onload = () => buscarUsuarios();
+</script>
+
+<script src="dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Usando a versão completa -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

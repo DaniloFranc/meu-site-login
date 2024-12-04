@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://nova-pasta-5.onrender.com/login', {
+        const response = await fetch('http://localhost:5000/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,9 +32,14 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
         const data = await response.json();
         if (data.success) {
-            localStorage.setItem('token', data.token); // Salva o token no localStorage
-            window.location.href = 'dashboard.html'; // Redireciona para o dashboard
+            // Salva o token e o nvlAcesso no localStorage
+            localStorage.setItem('token', data.token);  // Salva o token
+            localStorage.setItem('nvlAcesso', data.nvlAcesso);  // Salva o nvlAcesso
+
+            // Redireciona para o dashboard
+            window.location.href = 'dashboard.html'; 
         } else {
+            // Exibe a mensagem de erro caso o login falhe
             document.getElementById('error-message').innerText = data.message;
         }
     } catch (error) {
@@ -44,7 +49,6 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 });
 
 
-
 // Lógica para recuperação de senha
 document.getElementById('forgotPasswordForm').addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -52,7 +56,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', async (
     const email = document.getElementById('email').value;
 
     try {
-        const response = await fetch('https://nova-pasta-5.onrender.com/recover-password', {
+        const response = await fetch('http://localhost/recover-password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
