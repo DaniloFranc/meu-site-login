@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleDashboard.css">
     <link rel="stylesheet" href="styleMusicTheory.css">
     <style>
         body {
@@ -32,7 +33,7 @@
         </div>
         <div class="spaceLogo"></div>
 
-        <!-- transformar esse menu aqui em nav para resoluções menor que 992 e maior que 768 -->
+
         <div class="MusicNavBar">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
@@ -52,16 +53,32 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Material de Apoio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gestão</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestão
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+                                    <li><a class="dropdown-item" href="CrudUsuarios.html">Usuários</a></li>
+                                    <li><a class="dropdown-item" href="#">Plano e Pagamentos</a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar Biblioteca</a></li>
+                                    <li><a class="dropdown-item" href="#">Quadro de Horários</a></li>
+                                </ul>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        
 
 
+        <!-- <div class="MenuAlin">
+            <div class="letter0">Área do Aluno</div>
+            <div class="letter0">Cursos</div>
+            <div class="letter0">Material de Apoio</div>
+            <div class="letter0">Gestão</div>
+        </div> -->
     </div>
 </header>
 <body>
@@ -415,6 +432,7 @@
 
         </div>
     </div>
+    <div id="nivelAcessoDisplay" class="hidden"></div>
 
 </body>
 
