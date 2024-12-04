@@ -33,7 +33,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
         status
     };
 
-    fetch('http://localhost:5000/register', {
+    fetch('https://nova-pasta-5.onrender.com/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ document.getElementById('nome').addEventListener('blur', function() {
     const nome = this.value;
 
     if (nome) {
-        fetch(`http://localhost:5000/usuarios?nome=${nome}`)
+        fetch(`https://nova-pasta-5.onrender.com/usuarios?nome=${nome}`)
             .then(response => response.json())
             .then(data => {
                 if (data.usuarios && data.usuarios.length > 0) {
@@ -131,7 +131,7 @@ document.getElementById('submitAlterar').addEventListener('click', function(even
         status
     };
 
-    fetch('http://localhost:5000/alterar', {
+    fetch('https://nova-pasta-5.onrender.com/alterar', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

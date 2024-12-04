@@ -147,7 +147,7 @@
 
     // Função para buscar usuários com base no nome
     function buscarUsuarios(nome = '') {
-        const url = nome ? `http://localhost:5000/usuarios?nome=${nome}` : 'http://localhost:5000/usuarios';
+        const url = nome ? `https://nova-pasta-5.onrender.com/usuarios?nome=${nome}` : 'https://nova-pasta-5.onrender.com/usuarios';
         fetch(url)
             .then(response => response.json())
             .then(data => {

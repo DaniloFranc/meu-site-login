@@ -36,7 +36,7 @@ async function validateAccess() {
     
 
     try {
-        const response = await fetch('http://localhost:5000/dashboard-data', {
+        const response = await fetch('https://nova-pasta-5.onrender.com/dashboard-data', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`, // Envia o token no cabeçalho

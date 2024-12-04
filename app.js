@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:5000/login', {
+        const response = await fetch('https://nova-pasta-5.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', async (
     const email = document.getElementById('email').value;
 
     try {
-        const response = await fetch('http://localhost/recover-password', {
+        const response = await fetch('https://nova-pasta-5.onrender.com/recover-password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
