@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="login-container">
-        <!-- Logo -->
+       
         <img src="img/LogoEmPauta.png" alt="Logo" class="logo">
 
-        <!-- Caixa de Redefinição -->
+        
         <div id="loginBox">
             <h2 class="titulo">Redefinir Senha</h2>
             
@@ -28,41 +28,41 @@
     </div>
 
     <script>
-        // Função para pegar o token da URL
+       
         function getUrlParameter(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
         }
 
-        // Verificar o token ao carregar a página
+        
         document.addEventListener("DOMContentLoaded", function () {
             const token = getUrlParameter("token");
 
-            // Se não houver token, ou o token for inválido, redirecionar
+            
             if (!token) {
-                window.location.href = "http://127.0.0.1:5501/index.html";  // Redireciona para a página de login
+                window.location.href = "http://127.0.0.1:5501/index.html"; 
             }
 
-            // Validar o token com uma requisição ao backend
+            
             fetch(`https://nova-pasta-5.onrender.com/validar-token?token=${token}`)
                 .then(response => response.json())
                 .then(data => {
                     if (!data.success) {
-                        // Se o token for inválido ou expirado, redireciona
+                        
                         window.location.href = "http://127.0.0.1:5501/index.html";
                     } else {
-                        // Armazenar o e-mail do usuário se necessário
+                        
                         localStorage.setItem('userEmail', data.email);
                     }
                 })
                 .catch(error => {
-                    // Em caso de erro na requisição, redireciona
+                    
                     console.error("Erro ao validar o token:", error);
                     window.location.href = "http://127.0.0.1:5501/index.html";
                 });
         });
 
-        // Lógica para o formulário de redefinição de senha
+        
         document.getElementById("resetPasswordForm").addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -70,14 +70,14 @@
             const novaSenha = document.getElementById("novaSenha").value;
             const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-            // Verificar se as senhas coincidem
+           
             if (novaSenha !== confirmarSenha) {
                 document.getElementById("error-message").textContent = "As senhas não coincidem.";
                 return;
             }
 
             try {
-                // Enviar o token e a nova senha para o backend
+                
                 const response = await fetch("https://nova-pasta-5.onrender.com/redefinir", {
                     method: "POST",
                     headers: {
@@ -90,7 +90,7 @@
 
                 if (data.success) {
                     alert("Senha redefinida com sucesso!");
-                    window.location.href = "http://127.0.0.1:5501/index.html";  // Redireciona para a página de login
+                    window.location.href = "http://127.0.0.1:5501/index.html";  
                 } else {
                     document.getElementById("error-message").textContent = data.message;
                 }

@@ -571,15 +571,7 @@
         font-family: "Roboto", sans-serif;
     }
 
-    .navbar-expand-md .navbar-collapse {
-        display: none !important; /* Oculta o menu expandido */
-    }
-    .navbar-expand-md .navbar-toggler {
-        display: block; /* Mostra o botão hambúrguer */
-    }
-    .navbar-expand-md .collapse.show {
-        display: block !important; /* Força o menu colapsável a aparecer quando aberto */
-    }
+   
 
     .topoAlin1{
         display: flex;
@@ -764,10 +756,7 @@
         flex-direction: column;
     }
 
-    .MusicNavBar{
-        display: flex;
-        justify-content: flex-end;
-    }
+    
 
     .logoDashboard{
         display: flex;
@@ -1004,6 +993,8 @@
     .titleHandout{
         margin-top: 10vw;
     }
+
+    
 
 
 }

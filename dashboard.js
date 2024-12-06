@@ -467,7 +467,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Chama a função para carregar os dados assim que a página for carregada
+
 window.onload = loadUserData;
+
+
+
+
+
 
 
 
