@@ -15,7 +15,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     const contatosResponsavel = document.getElementById('contatos_responsavel').value;
     const tags = document.getElementById('tags').value;
     const redesSociais = document.getElementById('redes_sociais').value;
-    const planosVigentes = document.getElementById('planos_vigentes').value;
+    const plnsVigentes = document.getElementById('planos_vigentes').value;
     const status = document.getElementById('status').value;
 
     const userData = {
@@ -29,7 +29,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
         contatosResponsavel,
         tags,
         redesSociais,
-        planosVigentes,
+        plnsVigentes,
         status
     };
 
@@ -82,7 +82,7 @@ document.getElementById('nome').addEventListener('blur', function() {
                     document.getElementById('contatos_responsavel').value = usuario.contatosResponsavel || '';
                     document.getElementById('tags').value = usuario.tags || '';
                     document.getElementById('redes_sociais').value = usuario.redesSociais || '';
-                    document.getElementById('planos_vigentes').value = usuario.planosVigentes || '';
+                    document.getElementById('planos_vigentes').value = usuario.plnsVigentes || '';
                     document.getElementById('status').value = usuario.status || 'ativo';
                     const dataCadastroDate = new Date(usuario.dataCadastro);
                     const day = String(dataCadastroDate.getDate()).padStart(2, '0');
@@ -113,7 +113,7 @@ document.getElementById('submitAlterar').addEventListener('click', function(even
     const contatosResponsavel = document.getElementById('contatos_responsavel').value;
     const tags = document.getElementById('tags').value;
     const redesSociais = document.getElementById('redes_sociais').value;
-    const planosVigentes = document.getElementById('planos_vigentes').value;
+    const plnsVigentes = document.getElementById('planos_vigentes').value;
     const status = document.getElementById('status').value;
 
     const updatedData = {
@@ -127,7 +127,7 @@ document.getElementById('submitAlterar').addEventListener('click', function(even
         contatosResponsavel,
         tags,
         redesSociais,
-        planosVigentes,
+        plnsVigentes,
         status
     };
 

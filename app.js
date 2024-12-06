@@ -49,32 +49,28 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 });
 
 
-// Lógica para recuperação de senha
-document.getElementById('forgotPasswordForm').addEventListener('submit', async (event) => {
-    event.preventDefault();
+document.getElementById('forgotPasswordForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
 
     const email = document.getElementById('email').value;
 
     try {
-        const response = await fetch('https://nova-pasta-5.onrender.com/recover-password', {
+        const response = await fetch('http://localhost:5000/solicitar-redefinicao', {  // Altere a URL conforme necessário
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({ email })
         });
 
         const data = await response.json();
         if (data.success) {
-            alert('Instruções para recuperação de senha enviadas!');
-            // Volta para o login após o sucesso
-            document.getElementById('forgotPasswordBox').style.display = 'none';
-            document.getElementById('loginBox').style.display = 'block';
+            alert('E-mail de redefinição enviado!');
+            window.location.href = '/index.html';  // Redireciona para a página de login
         } else {
-            alert(data.message); // Mostra a mensagem de erro
+            document.getElementById('error-message').textContent = data.message;
         }
     } catch (error) {
-        console.error('Erro ao recuperar senha:', error);
-        alert('Erro ao conectar ao servidor.');
+        document.getElementById('error-message').textContent = 'Erro ao enviar o e-mail.';
     }
 });

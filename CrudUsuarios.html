@@ -126,22 +126,22 @@
         usuarios.forEach(usuario => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td>${usuario.nome}</td>
-                <td>${usuario.nvlAcesso}</td>
-                <td>${usuario.dataCadastro}</td>
-                <td>${usuario.contatos}</td>
-                <td>${usuario.responsavel}</td>
-                <td>${usuario.contatosResponsavel}</td>
-                <td>${usuario.tags}</td>
-                <td>${usuario.redesSociais}</td>
-                <td>${usuario.avlRecebidas}</td>
-                <td>${usuario.nvlSatisfacao}</td>
-                <td>${usuario.plnsVigentes}</td>
-                <td>${usuario.parcEmAtraso}</td>
-                <td>${usuario.status}</td>
-                <td>${usuario.acoes}</td>
-            `;
-            tbody.appendChild(tr);
+            <td>${usuario.nome || ''}</td>
+            <td>${usuario.nvlAcesso || ''}</td>
+            <td>${usuario.dataCadastro || ''}</td>
+            <td>${usuario.contatos || ''}</td>
+            <td>${usuario.responsavel || ''}</td>
+            <td>${usuario.contatosResponsavel || ''}</td>
+            <td>${usuario.tags || ''}</td>
+            <td>${usuario.redesSociais || ''}</td>
+            <td>${usuario.avlRecebidas || ''}</td>
+            <td>${usuario.nvlSatisfacao || ''}</td>
+            <td>${usuario.plnsVigentes || ''}</td>
+            <td>${usuario.parcEmAtraso || ''}</td>
+            <td>${usuario.status || ''}</td>
+            <td>${usuario.acoes || ''}</td>
+        `;
+        tbody.appendChild(tr);
         });
     }
 

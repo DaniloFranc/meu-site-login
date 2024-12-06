@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <img src="img/LogoEmPauta.png" alt="Logo" class="logo">
+
+        <!-- Caixa de Redefinição -->
+        <div id="loginBox">
+            <h2 class="titulo">Redefinir Senha</h2>
+            
+            <!-- Exibir o e-mail na página -->
+            <!-- <p id="userEmail"></p> -->
+
+            <form id="resetPasswordForm" class="caixaPrinc">
+                <input type="password" id="novaSenha" placeholder="Nova Senha" required>
+                <input type="password" id="confirmarSenha" placeholder="Confirmar Senha" required>
+                <button type="submit" id="redefinir">Redefinir</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+    </div>
+
+    <script>
+            // Função para pegar o token da URL
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Preencher o campo de redefinição de senha com o valor do token
+        document.addEventListener("DOMContentLoaded", function () {
+            const token = getUrlParameter("token");
+
+            // Ao submeter o formulário de redefinição de senha
+            const form = document.getElementById("resetPasswordForm");
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const novaSenha = document.getElementById("novaSenha").value;
+                const confirmarSenha = document.getElementById("confirmarSenha").value;
+
+                // Verificar se as senhas coincidem
+                if (novaSenha !== confirmarSenha) {
+                    document.getElementById("error-message").textContent = "As senhas não coincidem.";
+                    return;
+                }
+
+                try {
+                    // Enviar o token e a nova senha para o backend para validação e redefinição
+                    const response = await fetch("http://localhost:5000/redefinir", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ token: token, novaSenha: novaSenha }),
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        alert("Senha redefinida com sucesso!");
+                        // Redirecionar para a página de login ou outra página
+                        window.location.href = "http://127.0.0.1:5501/index.html";
+                    } else {
+                        document.getElementById("error-message").textContent = data.message;
+                    }
+                } catch (error) {
+                    console.error("Erro ao redefinir a senha:", error);
+                    document.getElementById("error-message").textContent = "Erro ao redefinir a senha.";
+                }
+            });
+});
+
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
