@@ -276,6 +276,7 @@
     .alinMusicTheorS{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     
     .alinApprenticeships{
@@ -1103,6 +1104,7 @@
     .alinMusicTheorS{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     
     .alinApprenticeships{
