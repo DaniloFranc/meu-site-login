@@ -97,12 +97,20 @@ function fetchProgress() {
             const progress = data.progress || 0; // Se não houver progresso, assume 0
             const progressBar = document.getElementById("progress");
             const progressValue = document.getElementById("progress-value");
+            const ultimaInteracao = document.getElementById("ultimaInteracao");
 
             // Atualiza a barra de progresso com o valor recuperado do backend
             progressBar.style.width = `${progress}%`;
             progressValue.textContent = `${progress}%`;
 
-            // Se o progresso for maior que 0, marca o checkbox
+            // Atualiza o valor de últimaInteracao
+            if (progress > 0) {
+                ultimaInteracao.textContent = `última Interação: ${progress}%`;
+            } else {
+                ultimaInteracao.textContent = "última Interação: Não iniciado";
+            }
+
+            // Se o progresso for maior que 0, marca o checkbox (opcional, se necessário)
             checkbox.checked = progress > 0;
         } else {
             console.error('Erro ao buscar o progresso:', data.message);
@@ -112,6 +120,7 @@ function fetchProgress() {
         console.error('Erro na requisição:', error);
     });
 }
+
 
 ABERTURA.addEventListener("click", () => {
     // Limpa a tela antes de adicionar os novos elementos
