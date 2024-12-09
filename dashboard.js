@@ -85,7 +85,7 @@ const boxClassroom=document.getElementById("boxClassroom")
 
 // Função para buscar o progresso do backend
 function fetchProgress() {
-    fetch('http://localhost:5000/get-progress', {
+    fetch('https://nova-pasta-5.onrender.com/get-progress', {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}` // Usando o token do localStorage
@@ -184,7 +184,7 @@ ABERTURA.addEventListener("click", () => {
 
     // Função para buscar o progresso do backend
     function fetchProgress() {
-        fetch('http://localhost:5000/get-progress', {
+        fetch('https://nova-pasta-5.onrender.com/get-progress', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}` // Usando o token do localStorage
@@ -234,7 +234,7 @@ ABERTURA.addEventListener("click", () => {
 
     // Função para enviar o progresso ao backend
     function sendProgressToDB(progress) {
-        fetch('http://localhost:5000/update-progress', {
+        fetch('https://nova-pasta-5.onrender.com/update-progress', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
