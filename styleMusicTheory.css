@@ -161,12 +161,7 @@
     }
     
     
-    .AlinLetterProgressBoxCourse{
-        font-size: "Roboto", sans-serif;
-        font-size: 1vw;
-        font-weight: bold;
-        margin-top: 1.5vw;
-    }
+    
     
     
     .iconCalendar{
@@ -372,7 +367,7 @@
 /* Estilos para telas entre 768px e 992px (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
 
-
+    
     
 
     header {
