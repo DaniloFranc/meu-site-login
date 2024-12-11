@@ -41,7 +41,8 @@
     /*mexer depois na barra de opções acima da página*/
     
     .MusicNavBar{
-        margin-top: 1vw;
+        display: flex;
+        font-size: 1vw;
     }
 
     /*mexer depois na barra de opções acima da página*/
@@ -245,6 +246,7 @@
         margin-top: 2vw;
         border-radius: 0.3vw;
     }
+    
     
     .contentCenter{
         

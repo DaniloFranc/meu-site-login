@@ -34,19 +34,42 @@
         <div class="MusicNavBar">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
+                    <!-- Botão de alternância do menu -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Menu colapsável -->
                     <div class="collapse navbar-collapse" id="menuNavbar">
-                        <ul class="navbar-nav mx-auto">
+                        <ul class="navbar-nav mx-auto"> <!-- mx-auto para centralizar -->
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Área do Aluno</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cursos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+                                    <li><a class="dropdown-item" href="MusicTheory.html">Teoria Musical</a></li>
+                                    <li><a class="dropdown-item" href="#">Leitura Melódica</a></li>
+                                    <li><a class="dropdown-item" href="#">Leitura Rítmica</a></li>
+                                    <li><a class="dropdown-item" href="#">Percepção Musical</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Material de Apoio</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Material de Apoio
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+                                    <li><a class="dropdown-item" href="MusicTheory.html">Metrônomo / Sequencer</a></li>
+                                    <li><a class="dropdown-item" href="#">Play Alongs</a></li>
+                                    <li><a class="dropdown-item" href="#">Referências Musicais</a></li>
+                                    <li><a class="dropdown-item" href="#">Folhas</a></li>
+                                    <li><a class="dropdown-item" href="#">Escalas para guitarra e violão</a></li>
+                                    <li><a class="dropdown-item" href="#">Acordes para guitarra e violão</a></li>
+                                    <li><a class="dropdown-item" href="#">Acordes para Ukulelê</a></li>
+                                    <li><a class="dropdown-item" href="#">Acordes para Teclado</a></li>
+                                    <li><a class="dropdown-item" href="#">Vocalizes</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,8 +81,8 @@
                                     <li><a class="dropdown-item" href="#">Gerenciar Biblioteca</a></li>
                                     <li><a class="dropdown-item" href="#">Quadro de Horários</a></li>
                                 </ul>
-                                
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
